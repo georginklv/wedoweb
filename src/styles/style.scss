@@ -1,1 +1,7 @@
 @import '@/styles/variables.scss'; //main style
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 1600px;
+}

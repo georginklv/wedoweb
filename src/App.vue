@@ -13,7 +13,7 @@
 	</v-app>
 </template>
 <style lang="scss" scoped>
-@import '@/styles/variables.scss';
+@import '@/styles/style.scss';
 </style>
 <script>
 import TheHeader from './components/TheHeader';
