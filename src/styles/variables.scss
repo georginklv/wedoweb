@@ -1,0 +1,132 @@
+// src/style/variables.scss
+
+@import '@/styles/overrides.scss'; //overrides file
+
+// Typography}
+@font-face {
+  font-family: 'Phenomena-Black';
+  src: '/fonts/Phenomena-Black.ttf', format('ttf');
+}
+@font-face {
+  font-family: 'Phenomena-Black-Bold';
+  src: '/fonts/Phenomena-Black-Bold.ttf', format('ttf');
+}
+@font-face {
+  font-family: 'Phenomena-ExtraBold';
+  src: '/fonts/Phenomena-ExtraBold.ttf', format('ttf');
+}
+@font-face {
+  font-family: 'Phenomena-ExtraLight';
+  src: '/fonts/Phenomena-ExtraLight.ttf', format('ttf');
+}
+
+@font-face {
+  font-family: 'Phenomena-Thin';
+  src: '/fonts/Phenomena-Thin.ttf', format('ttf');
+}
+@font-face {
+  font-family: 'Phenomena-Regular';
+  src: '/fonts/Phenomena-Regular.ttf', format('ttf');
+}
+@font-face {
+  font-family: Phenomena-Regular;
+  src: '/fonts/Phenomena-Regular.woff', format('ttf');
+}
+@font-face {
+  font-family: 'Phenomena-Regular';
+  src: '/fonts/Phenomena-Regular.ttf', format('eot');
+}
+@font-face {
+  font-family: 'Phenomena-Regular';
+  src: '/fonts/Phenomena-Regular.woff', format('woff');
+}
+@font-face {
+  font-family: 'Phenomena-Regular';
+  src: '/fonts/Phenomena-Regular.woff2', format('woff2');
+}
+
+@font-face {
+  font-family: 'Phenomena-Black';
+  src: '/fonts/Phenomena-Black.woff', format('woff');
+}
+@font-face {
+  font-family: 'Phenomena-Black-Bold';
+  src: '/fonts/Phenomena-Black-Bold.woff', format('woff');
+}
+@font-face {
+  font-family: 'Phenomena-ExtraBold';
+  src: '/fonts/Phenomena-ExtraBold.woff', format('woff');
+}
+@font-face {
+  font-family: 'Phenomena-ExtraLight';
+  src: '/fonts/Phenomena-ExtraLight.woff', format('woff');
+}
+
+@font-face {
+  font-family: 'Phenomena-Thin';
+  src: '/fonts/Phenomena-Thin.woff', format('woff');
+}
+
+
+
+
+// Globals
+$border-radius-root: 6px;
+$font-size-root: 14px;
+
+// Variables must come before the import
+$btn-letter-spacing: 0;
+$btn-font-weight: 400;
+$list-item-title-font-size: 0.929rem;
+$list-item-dense-title-font-size: 0.929rem;
+$list-item-dense-title-font-weight: initial;
+$fab-icon-sizes: (
+  'small': 20
+);
+$btn-sizes: (
+  'default': 41,
+  'large': 54
+);
+
+$headings: (
+  'h1': (
+    'size': 3.3125rem,
+    'line-height': 1.15em
+  ),
+  'h2': (
+    'size': 2.25rem,
+    'line-height': 1.5em
+  )
+);
+
+// Vuetify Overrides
+//All variable changes need to happen before @import
+$font-size-root: 20px !important;
+$body-font-family: 'Phenomena-Regular' !important;
+//specificity needs to be taken into consideration for some components
+//because !important has been assigned to their css
+html,
+body,
+.v-application {
+    font-family: $body-font-family;
+}
+//added all typography helper classes because of css specificity override
+//https://vuetifyjs.com/en/styles/typography#typography
+.v-application {
+    .display-4,
+    .display-3,
+    .display-2,
+    .display-1,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline {
+        font-family: $body-font-family;
+    }
+}
+ 
+@import '~vuetify/src/styles/settings/_variables.scss';
