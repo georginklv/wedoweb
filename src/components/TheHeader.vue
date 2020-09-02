@@ -1,6 +1,6 @@
 <template>
-	<v-app class="wrapper">
-		<div class="theHeader">
+	<v-app>
+		<div class="wrapper theHeader">
 			<v-col>
 				<v-row>
 					<p class="text-uppercase" style="font-size: 40px">we are</p>
@@ -23,17 +23,10 @@ export default {};
 </script>
 
 <style scoped>
-@import '@../styles/style.scss';
-
 .line {
 	margin: 10px auto 40px;
 	width: 200px;
 	height: 10px;
 	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
-}
-.theHeader {
-	background-image: url('../assets/headerPic.png');
-	background-position: center;
-	background-size: cover;
 }
 </style>

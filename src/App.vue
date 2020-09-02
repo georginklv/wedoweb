@@ -12,9 +12,7 @@
 		<TheFooter />
 	</v-app>
 </template>
-<style lang="scss" scoped>
-@import '@/styles/style.scss';
-</style>
+<style lang="scss" scoped></style>
 <script>
 import TheHeader from './components/TheHeader';
 import TheNavBar from './components/TheNavBar';
