@@ -12,79 +12,80 @@
 					dignissimos, alias at molestiae odit labore architecto, hic iusto nobis quo quisquam saepe deleniti libero
 					veniam aliquam.
 				</p>
+				<v-row class="card-wrapper">
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
 
-				<v-col cols="3">
-					<v-card class="mx-auto" max-width="344" min-width="344" hover rounded>
-						<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-						<v-list-item three-line>
-							<v-list-item-content>
-								<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-								<v-list-item-subtitle
-									>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-									v</v-list-item-subtitle
-								>
-							</v-list-item-content>
-						</v-list-item>
+							<v-card-actions>
+								<v-btn text>Button</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="3">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
 
-						<v-card-actions>
-							<v-btn text>Button</v-btn>
-						</v-card-actions>
-					</v-card>
-				</v-col>
-				<v-col cols="3">
-					<v-card class="mx-auto" max-width="344" min-width="344" hover rounded>
-						<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-						<v-list-item three-line>
-							<v-list-item-content>
-								<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-								<v-list-item-subtitle
-									>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-									v</v-list-item-subtitle
-								>
-							</v-list-item-content>
-						</v-list-item>
+							<v-card-actions>
+								<v-btn text>Button</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="3">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
 
-						<v-card-actions>
-							<v-btn text>Button</v-btn>
-						</v-card-actions>
-					</v-card>
-				</v-col>
-				<v-col cols="3">
-					<v-card class="mx-auto" max-width="344" min-width="344" hover rounded>
-						<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-						<v-list-item three-line>
-							<v-list-item-content>
-								<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-								<v-list-item-subtitle
-									>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-									v</v-list-item-subtitle
-								>
-							</v-list-item-content>
-						</v-list-item>
+							<v-card-actions>
+								<v-btn text>Button</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="3">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
 
-						<v-card-actions>
-							<v-btn text>Button</v-btn>
-						</v-card-actions>
-					</v-card>
-				</v-col>
-				<v-col cols="3">
-					<v-card class="mx-auto" max-width="344" min-width="344" hover rounded>
-						<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-						<v-list-item three-line>
-							<v-list-item-content>
-								<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-								<v-list-item-subtitle
-									>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-									v</v-list-item-subtitle
-								>
-							</v-list-item-content>
-						</v-list-item>
-
-						<v-card-actions>
-							<v-btn text>Button</v-btn>
-						</v-card-actions>
-					</v-card>
-				</v-col>
+							<v-card-actions>
+								<v-btn text>Button</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+				</v-row>
 			</v-col>
 		</div>
 	</v-app>
