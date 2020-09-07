@@ -23,6 +23,9 @@ export default {};
 	background-repeat: no-repeat;
 	position: relative;
 }
+.line {
+	width: 500px;
+}
 .v-btn {
 	font-size: 20px !important;
 	top: 10px !important;

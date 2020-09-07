@@ -63,9 +63,7 @@ body,
 		font-family: $body-font-family;
 	}
 }
-#app {
-	min-height: 100vh;
-}
+
 .v-application--wrap {
 	min-height: unset;
 }
@@ -74,15 +72,17 @@ body,
 	flex-direction: column;
 	width: 100%;
 	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 40px 20px;
 }
 .row {
 	flex-wrap: nowrap;
 }
 .line {
-	width: 360px;
+	width: 300px;
 	height: 10px;
 	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
 	border-radius: 30px;
-	margin: 0 40px;
+	margin: 0 40px 0 0;
 }
 </style>
