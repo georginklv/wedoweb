@@ -1,18 +1,40 @@
 <template>
-	<v-app>
+	<v-app id="app">
+		<TheNavBar />
 		<v-main>
-			<v-container class="fill-height" fluid>
-				<v-row align="center" justify="center">
-					<TheNavBar />
-					<TheHeader />
-					<router-view />
-				</v-row>
-			</v-container>
+			<TheHeader />
+			<WeKnowWeb />
+			<transition name="fade">
+				<router-view />
+			</transition>
 		</v-main>
 		<TheFooter />
 	</v-app>
 </template>
-<style lang="scss" scoped>
+
+<script>
+import TheHeader from "./components/TheHeader";
+import TheNavBar from "./components/TheNavBar";
+import TheFooter from "./components/TheFooter";
+import WeKnowWeb from "./components/WeKnowWeb";
+
+export default {
+	name: "App",
+
+	components: {
+		TheHeader,
+		TheFooter,
+		TheNavBar,
+		WeKnowWeb,
+	},
+
+	data: () => ({
+		//
+	}),
+};
+</script>
+
+<style lang="scss">
 @import "~vuetify/src/styles/settings/_variables.scss";
 @font-face {
 	font-family: "Phenomena-Regular";
@@ -41,28 +63,26 @@ body,
 		font-family: $body-font-family;
 	}
 }
+#app {
+	min-height: 100vh;
+}
+.v-application--wrap {
+	min-height: unset;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	max-width: 1600px;
 }
+.row {
+	flex-wrap: nowrap;
+}
+.line {
+	width: 360px;
+	height: 10px;
+	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
+	border-radius: 30px;
+	margin: 0 40px;
+}
 </style>
-<script>
-import TheHeader from "./components/TheHeader";
-import TheNavBar from "./components/TheNavBar";
-import TheFooter from "./components/TheFooter";
-
-export default {
-	name: "App",
-
-	components: {
-		TheHeader,
-		TheFooter,
-		TheNavBar,
-	},
-
-	data: () => ({
-		//
-	}),
-};
-</script>
