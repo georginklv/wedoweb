@@ -96,19 +96,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.title p {
-	font-size: 80px;
-	margin-bottom: 40px;
-}
-.description {
-	font-size: 16px;
-	font-weight: normal;
-	padding: 20px 0;
-	max-width: 800px;
-}
 .row {
 	display: flex;
 	flex-wrap: wrap !important;
 	flex: 0 1 auto;
+	justify-content: space-between;
 }
 </style>

@@ -2,30 +2,35 @@
 	<v-app id="app">
 		<TheNavBar />
 		<v-main>
-			<TheHeader />
-			<WeKnowWeb />
-			<transition name="fade">
-				<router-view />
-			</transition>
+			<v-container>
+				<TheHeader />
+				<WeKnowWeb />
+				<TheTeam />
+				<transition name="fade">
+					<router-view />
+				</transition>
+			</v-container>
 		</v-main>
 		<TheFooter />
 	</v-app>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader';
-import TheNavBar from './components/TheNavBar';
-import TheFooter from './components/TheFooter';
-import WeKnowWeb from './components/WeKnowWeb';
+import TheHeader from "./components/TheHeader";
+import TheNavBar from "./components/TheNavBar";
+import TheFooter from "./components/TheFooter";
+import WeKnowWeb from "./components/WeKnowWeb";
+import TheTeam from "./components/TheTeam";
 
 export default {
-	name: 'App',
+	name: "App",
 
 	components: {
 		TheHeader,
 		TheFooter,
 		TheNavBar,
 		WeKnowWeb,
+		TheTeam,
 	},
 
 	data: () => ({
@@ -35,13 +40,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~vuetify/src/styles/settings/_variables.scss';
+@import "~vuetify/src/styles/settings/_variables.scss";
 @font-face {
-	font-family: 'Phenomena-Regular';
-	src: url('../public/fonts/Phenomena-Regular.woff2');
+	font-family: "Phenomena-Regular";
+	src: url("../public/fonts/Phenomena-Regular.woff2");
 }
 $font-size-root: 20px !important;
-$body-font-family: 'Phenomena-Regular' !important;
+$body-font-family: "Phenomena-Regular" !important;
 html,
 body,
 .v-application {
@@ -67,10 +72,15 @@ body,
 .v-application--wrap {
 	min-height: unset;
 }
-#app {
+body {
 	background-color: #ccc;
 }
-
+.theme--light.v-application {
+	background: transparent !important;
+}
+.container {
+	background-color: #fff;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -88,5 +98,15 @@ body,
 	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
 	border-radius: 30px;
 	margin: 0 40px 0 0;
+}
+.title p {
+	font-size: 80px;
+	margin-bottom: 40px;
+}
+.description {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 20px 0;
+	max-width: 800px;
 }
 </style>
