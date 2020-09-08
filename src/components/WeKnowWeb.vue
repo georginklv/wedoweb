@@ -14,7 +14,7 @@
 				</p>
 				<v-row class="card-wrapper">
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded outlined>
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
@@ -31,8 +31,8 @@
 							</v-card-actions>
 						</v-card>
 					</v-col>
-					<v-col cols="3">
-						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded outlined>
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
@@ -49,8 +49,8 @@
 							</v-card-actions>
 						</v-card>
 					</v-col>
-					<v-col cols="3">
-						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded outlined>
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
@@ -67,8 +67,8 @@
 							</v-card-actions>
 						</v-card>
 					</v-col>
-					<v-col cols="3">
-						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="300" min-width="300" hover rounded outlined>
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
@@ -105,5 +105,10 @@ export default {};
 	font-weight: normal;
 	padding: 20px 0;
 	max-width: 800px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap !important;
+	flex: 0 1 auto;
 }
 </style>

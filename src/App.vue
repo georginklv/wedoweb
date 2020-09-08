@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
-import TheNavBar from "./components/TheNavBar";
-import TheFooter from "./components/TheFooter";
-import WeKnowWeb from "./components/WeKnowWeb";
+import TheHeader from './components/TheHeader';
+import TheNavBar from './components/TheNavBar';
+import TheFooter from './components/TheFooter';
+import WeKnowWeb from './components/WeKnowWeb';
 
 export default {
-	name: "App",
+	name: 'App',
 
 	components: {
 		TheHeader,
@@ -35,13 +35,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~vuetify/src/styles/settings/_variables.scss";
+@import '~vuetify/src/styles/settings/_variables.scss';
 @font-face {
-	font-family: "Phenomena-Regular";
-	src: url("../public/fonts/Phenomena-Regular.woff2");
+	font-family: 'Phenomena-Regular';
+	src: url('../public/fonts/Phenomena-Regular.woff2');
 }
 $font-size-root: 20px !important;
-$body-font-family: "Phenomena-Regular" !important;
+$body-font-family: 'Phenomena-Regular' !important;
 html,
 body,
 .v-application {
@@ -67,13 +67,17 @@ body,
 .v-application--wrap {
 	min-height: unset;
 }
+#app {
+	background-color: #ccc;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	padding: 0 40px 20px;
 	max-width: 1600px;
 	margin: 0 auto;
-	padding: 0 40px 20px;
+	width: 100%;
 }
 .row {
 	flex-wrap: nowrap;
