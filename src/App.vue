@@ -5,7 +5,11 @@
 			<v-container>
 				<TheHeader />
 				<WeKnowWeb />
+				<OurProjects />
+				<WhyUs />
 				<TheTeam />
+				<TheBlog />
+				<TheQuestions />
 				<transition name="fade">
 					<router-view />
 				</transition>
@@ -16,21 +20,29 @@
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
-import TheNavBar from "./components/TheNavBar";
-import TheFooter from "./components/TheFooter";
-import WeKnowWeb from "./components/WeKnowWeb";
-import TheTeam from "./components/TheTeam";
+import TheHeader from './components/TheHeader';
+import TheNavBar from './components/TheNavBar';
+import TheFooter from './components/TheFooter';
+import WeKnowWeb from './components/WeKnowWeb';
+import OurProjects from './components/OurProjects';
+import WhyUs from './components/WhyUs';
+import TheBlog from './components/TheBlog';
+import TheTeam from './components/TheTeam';
+import TheQuestions from './components/TheQuestions';
 
 export default {
-	name: "App",
+	name: 'App',
 
 	components: {
 		TheHeader,
 		TheFooter,
 		TheNavBar,
 		WeKnowWeb,
+		OurProjects,
+		WhyUs,
+		TheBlog,
 		TheTeam,
+		TheQuestions,
 	},
 
 	data: () => ({
@@ -40,13 +52,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~vuetify/src/styles/settings/_variables.scss";
+@import '~vuetify/src/styles/settings/_variables.scss';
 @font-face {
-	font-family: "Phenomena-Regular";
-	src: url("../public/fonts/Phenomena-Regular.woff2");
+	font-family: 'Phenomena-Regular';
+	src: url('../public/fonts/Phenomena-Regular.woff2');
 }
 $font-size-root: 20px !important;
-$body-font-family: "Phenomena-Regular" !important;
+$body-font-family: 'Phenomena-Regular' !important;
 html,
 body,
 .v-application {
