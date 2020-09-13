@@ -8,9 +8,9 @@
 					<div class="line"></div>
 				</div>
 				<p class="description">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis reiciendis eveniet quos
-					dignissimos, alias at molestiae odit labore architecto, hic iusto nobis quo quisquam saepe deleniti libero
-					veniam aliquam.
+					Izpolvame nai-novite tehnologii koito ni pozvolqvat nashite produkti da rabotqt bezuprechno i byrzo. Nashiq
+					kod e chist i lesen za poddryjka,a dizaina ni e moderen i inovativen. Nashiq ekip ima kapacitet da syzdade
+					vashiq brand ot 0.
 				</p>
 				<v-row class="card-wrapper">
 					<v-col cols="auto">
@@ -18,7 +18,61 @@
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-title class="headline mb-1">Web Development</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
+
+							<v-card-actions>
+								<v-btn text>View Pricing</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">Mobile Web Development</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
+
+							<v-card-actions>
+								<v-btn text>View Pricing</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">Online Shop</v-list-item-title>
+									<v-list-item-subtitle
+										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
+										v</v-list-item-subtitle
+									>
+								</v-list-item-content>
+							</v-list-item>
+
+							<v-card-actions>
+								<v-btn text>Soon</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col cols="auto">
+						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
+							<v-list-item three-line>
+								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
+								<v-list-item-content>
+									<v-list-item-title class="headline mb-1">UX/UI</v-list-item-title>
 									<v-list-item-subtitle
 										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
 										v</v-list-item-subtitle
@@ -36,7 +90,7 @@
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-title class="headline mb-1">SEO</v-list-item-title>
 									<v-list-item-subtitle
 										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
 										v</v-list-item-subtitle
@@ -54,7 +108,7 @@
 							<v-list-item three-line>
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
+									<v-list-item-title class="headline mb-1">Social Media Marketing</v-list-item-title>
 									<v-list-item-subtitle
 										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
 										v</v-list-item-subtitle
@@ -63,61 +117,7 @@
 							</v-list-item>
 
 							<v-card-actions>
-								<v-btn text>Button</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
-								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
-
-							<v-card-actions>
-								<v-btn text>Button</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
-								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
-
-							<v-card-actions>
-								<v-btn text>Button</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
-								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">First type</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
-
-							<v-card-actions>
-								<v-btn text>Button</v-btn>
+								<v-btn text>View Pricing</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
