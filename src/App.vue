@@ -81,6 +81,14 @@ body,
 .theme--light.v-application {
 	background: transparent !important;
 }
+.v-btn {
+	transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: #301aff !important;
+	}
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
