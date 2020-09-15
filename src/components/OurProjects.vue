@@ -112,4 +112,12 @@ export default {};
 	flex: 0 1 auto;
 	justify-content: space-between;
 }
+.v-btn {
+	&:active,
+	&:focus,
+	&:hover {
+		color: #fff !important;
+		background-color: #301aff !important;
+	}
+}
 </style>

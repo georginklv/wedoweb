@@ -90,4 +90,13 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-btn {
+	&:active,
+	&:focus,
+	&:hover {
+		color: #fff !important;
+		background-color: #301aff !important;
+	}
+}
+</style>
