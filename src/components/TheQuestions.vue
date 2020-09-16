@@ -3,8 +3,8 @@
 		<div class="wrapper mt-16">
 			<v-col class="pa-0">
 				<div class="title">
-					<p class="font-weight-medium text-uppercase">Our</p>
-					<p class="font-weight-black text-uppercase">Projects</p>
+					<p class="font-weight-medium text-uppercase">the</p>
+					<p class="font-weight-black text-uppercase">questions</p>
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">

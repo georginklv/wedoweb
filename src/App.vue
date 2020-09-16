@@ -6,7 +6,6 @@
 				<TheHeader />
 				<WeKnowWeb />
 				<OurProjects />
-				<WhyUs />
 				<TheTeam />
 				<TheBlog />
 				<TheQuestions />
@@ -25,7 +24,6 @@ import TheNavBar from './components/TheNavBar';
 import TheFooter from './components/TheFooter';
 import WeKnowWeb from './components/WeKnowWeb';
 import OurProjects from './components/OurProjects';
-import WhyUs from './components/WhyUs';
 import TheBlog from './components/TheBlog';
 import TheTeam from './components/TheTeam';
 import TheQuestions from './components/TheQuestions';
@@ -39,7 +37,6 @@ export default {
 		TheNavBar,
 		WeKnowWeb,
 		OurProjects,
-		WhyUs,
 		TheBlog,
 		TheTeam,
 		TheQuestions,
