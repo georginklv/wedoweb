@@ -1,33 +1,35 @@
 <template>
 	<v-app id="app">
 		<TheNavBar />
-		<v-main>
-			<TheHeader />
-			<WeKnowWeb />
-			<OurProjects />
-			<TheTeam />
-			<TheBlog />
-			<TheQuestions />
-			<transition name="fade">
-				<router-view />
-			</transition>
-		</v-main>
+		<v-parallax :src="require('@/assets/backgroundFormsCircles.png')" height="100%">
+			<v-main>
+				<TheHeader />
+				<WeKnowWeb />
+				<OurProjects />
+				<TheTeam />
+				<TheBlog />
+				<TheQuestions />
+				<transition name="fade">
+					<router-view />
+				</transition>
+			</v-main>
+		</v-parallax>
 		<TheFooter />
 	</v-app>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
-import TheNavBar from "./components/TheNavBar";
-import TheFooter from "./components/TheFooter";
-import WeKnowWeb from "./components/WeKnowWeb";
-import OurProjects from "./components/OurProjects";
-import TheBlog from "./components/TheBlog";
-import TheTeam from "./components/TheTeam";
-import TheQuestions from "./components/TheQuestions";
+import TheHeader from './components/TheHeader';
+import TheNavBar from './components/TheNavBar';
+import TheFooter from './components/TheFooter';
+import WeKnowWeb from './components/WeKnowWeb';
+import OurProjects from './components/OurProjects';
+import TheBlog from './components/TheBlog';
+import TheTeam from './components/TheTeam';
+import TheQuestions from './components/TheQuestions';
 
 export default {
-	name: "App",
+	name: 'App',
 
 	components: {
 		TheHeader,
@@ -47,13 +49,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~vuetify/src/styles/settings/_variables.scss";
+@import '~vuetify/src/styles/settings/_variables.scss';
 @font-face {
-	font-family: "Phenomena-Regular";
-	src: url("../public/fonts/Phenomena-Regular.woff2");
+	font-family: 'Phenomena-Regular';
+	src: url('../public/fonts/Phenomena-Regular.woff2');
 }
 $font-size-root: 20px !important;
-$body-font-family: "Phenomena-Regular" !important;
+$body-font-family: 'Phenomena-Regular' !important;
 html,
 body,
 .v-application {
@@ -74,6 +76,10 @@ body,
 	.overline {
 		font-family: $body-font-family;
 	}
+}
+.v-parallax__image {
+	transform: none !important;
+	width: 100% !important;
 }
 .v-application--wrap {
 	min-height: unset;
