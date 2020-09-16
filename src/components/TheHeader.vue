@@ -5,7 +5,7 @@
 				<img src="../assets/headerPic.png" class="headerImg" alt="header-image" />
 				<v-row class="btn-wrapper">
 					<div class="line"></div>
-					<v-btn shaped rounded class="white--text font-weight-black" color="orange" width="120px">let's talk </v-btn>
+					<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px">let's talk </v-btn>
 				</v-row>
 			</v-col>
 		</div>
@@ -29,11 +29,6 @@ export default {};
 .v-btn {
 	font-size: 20px !important;
 	top: 10px !important;
-	&:active,
-	&:focus,
-	&:hover {
-		background-color: blue !important;
-	}
 }
 .btn-wrapper {
 	position: relative;

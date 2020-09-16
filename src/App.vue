@@ -2,34 +2,32 @@
 	<v-app id="app">
 		<TheNavBar />
 		<v-main>
-			<v-container>
-				<TheHeader />
-				<WeKnowWeb />
-				<OurProjects />
-				<TheTeam />
-				<TheBlog />
-				<TheQuestions />
-				<transition name="fade">
-					<router-view />
-				</transition>
-			</v-container>
+			<TheHeader />
+			<WeKnowWeb />
+			<OurProjects />
+			<TheTeam />
+			<TheBlog />
+			<TheQuestions />
+			<transition name="fade">
+				<router-view />
+			</transition>
 		</v-main>
 		<TheFooter />
 	</v-app>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader';
-import TheNavBar from './components/TheNavBar';
-import TheFooter from './components/TheFooter';
-import WeKnowWeb from './components/WeKnowWeb';
-import OurProjects from './components/OurProjects';
-import TheBlog from './components/TheBlog';
-import TheTeam from './components/TheTeam';
-import TheQuestions from './components/TheQuestions';
+import TheHeader from "./components/TheHeader";
+import TheNavBar from "./components/TheNavBar";
+import TheFooter from "./components/TheFooter";
+import WeKnowWeb from "./components/WeKnowWeb";
+import OurProjects from "./components/OurProjects";
+import TheBlog from "./components/TheBlog";
+import TheTeam from "./components/TheTeam";
+import TheQuestions from "./components/TheQuestions";
 
 export default {
-	name: 'App',
+	name: "App",
 
 	components: {
 		TheHeader,
@@ -49,13 +47,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~vuetify/src/styles/settings/_variables.scss';
+@import "~vuetify/src/styles/settings/_variables.scss";
 @font-face {
-	font-family: 'Phenomena-Regular';
-	src: url('../public/fonts/Phenomena-Regular.woff2');
+	font-family: "Phenomena-Regular";
+	src: url("../public/fonts/Phenomena-Regular.woff2");
 }
 $font-size-root: 20px !important;
-$body-font-family: 'Phenomena-Regular' !important;
+$body-font-family: "Phenomena-Regular" !important;
 html,
 body,
 .v-application {
@@ -77,18 +75,19 @@ body,
 		font-family: $body-font-family;
 	}
 }
-
 .v-application--wrap {
 	min-height: unset;
-}
-body {
-	background-color: #ccc;
 }
 .theme--light.v-application {
 	background: transparent !important;
 }
-.container {
-	background-color: #fff;
+.v-btn {
+	transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: #301aff !important;
+	}
 }
 .wrapper {
 	display: flex;
