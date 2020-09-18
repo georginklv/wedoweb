@@ -110,6 +110,6 @@ export default {
 }
 .btn-wrapper {
 	position: relative;
-	top: -80px;
+	top: -150px;
 }
 </style>

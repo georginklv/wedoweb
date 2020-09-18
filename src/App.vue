@@ -1,19 +1,16 @@
 <template>
 	<v-app id="app">
 		<TheNavBar />
-		<v-parallax :src="require('@/assets/backgroundFormsCircles.png')" height="100%">
-			<v-main>
-				<TheHeader />
-				<WeKnowWeb />
-				<OurProjects />
-				<TheTeam />
-				<TheBlog />
-				<TheQuestions />
-				<transition name="fade">
-					<router-view />
-				</transition>
-			</v-main>
-		</v-parallax>
+		<v-main>
+			<TheHeader />
+			<WeKnowWeb />
+			<OurProjects />
+			<TheBlog />
+			<TheQuestions />
+			<transition name="fade">
+				<router-view />
+			</transition>
+		</v-main>
 		<TheFooter />
 	</v-app>
 </template>
@@ -25,7 +22,6 @@ import TheFooter from './components/TheFooter';
 import WeKnowWeb from './components/WeKnowWeb';
 import OurProjects from './components/OurProjects';
 import TheBlog from './components/TheBlog';
-import TheTeam from './components/TheTeam';
 import TheQuestions from './components/TheQuestions';
 
 export default {
@@ -38,7 +34,6 @@ export default {
 		WeKnowWeb,
 		OurProjects,
 		TheBlog,
-		TheTeam,
 		TheQuestions,
 	},
 
@@ -60,6 +55,10 @@ html,
 body,
 .v-application {
 	font-family: $body-font-family;
+}
+html,
+body {
+	font-size: 17px;
 }
 .v-application {
 	.display-4,

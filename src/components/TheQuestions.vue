@@ -3,8 +3,7 @@
 		<div class="wrapper mt-16">
 			<v-col class="pa-0">
 				<div class="title">
-					<p class="font-weight-medium text-uppercase">the</p>
-					<p class="font-weight-black text-uppercase">questions</p>
+					<p class="font-weight-black text-uppercase">FAQ</p>
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">
@@ -35,6 +34,6 @@ export default {};
 	display: flex;
 	flex-wrap: wrap !important;
 	flex: 0 1 auto;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 </style>

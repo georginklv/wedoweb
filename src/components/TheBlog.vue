@@ -77,6 +77,6 @@ export default {};
 	display: flex;
 	flex-wrap: wrap !important;
 	flex: 0 1 auto;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 </style>
