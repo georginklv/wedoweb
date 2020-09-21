@@ -6,7 +6,7 @@
 				<v-row class="btn-wrapper">
 					<div class="line"></div>
 					<v-row>
-						<v-dialog v-model="dialog" persistent max-width="600px">
+						<v-dialog v-model="dialog" persistent max-width="600px" class="pa-8">
 							<template v-slot:activator="{ on, attrs }">
 								<v-btn
 									chaped
@@ -22,50 +22,21 @@
 							</template>
 							<v-card>
 								<v-card-title>
-									<span class="headline">User Profile</span>
+									<span class="headline mb-4">Web Design & Development Offer</span>
+									<div class="line form-line mb-3"></div>
 								</v-card-title>
 								<v-card-text>
-									<v-container>
-										<v-col cols="6">
-											<v-text-field label="Legal first name*" required></v-text-field>
-										</v-col>
-										<v-col cols="6">
-											<v-text-field
-												label="Legal middle name"
-												hint="example of helper text only on focus"
-											></v-text-field>
-										</v-col>
-										<v-col cols="6">
-											<v-text-field
-												label="Legal last name*"
-												hint="example of persistent helper text"
-												persistent-hint
-												required
-											></v-text-field>
-										</v-col>
-										<v-col cols="6">
-											<v-text-field label="Email*" required></v-text-field>
-										</v-col>
-										<v-col cols="6">
-											<v-text-field label="Password*" type="password" required></v-text-field>
-										</v-col>
-										<v-col cols="6">
-											<v-select :items="['0-17', '18-29', '30-54', '54+']" label="Age*" required></v-select>
-										</v-col>
-										<v-col cols="6">
+									<v-container class="pa-0">
+										<v-col class="pa-0" cols="12">
+											<v-text-field label="Outlined" placeholder="Placeholder" outlined></v-text-field>
+
+											<v-autocomplete :items="items" label="Interests" multiple></v-autocomplete>
 											<v-autocomplete
-												:items="[
-													'Skiing',
-													'Ice hockey',
-													'Soccer',
-													'Basketball',
-													'Hockey',
-													'Reading',
-													'Writing',
-													'Coding',
-													'Basejump',
-												]"
-												label="Interests"
+												v-model="values"
+												:items="items"
+												outlined
+												chips
+												label="Outlined"
 												multiple
 											></v-autocomplete>
 										</v-col>
@@ -90,6 +61,7 @@
 export default {
 	data: () => ({
 		dialog: false,
+		items: ["Skiing", "Ice hockey", "Soccer", "Basketball", "Hockey", "Reading", "Writing", "Coding", "Basejump"],
 	}),
 };
 </script>
@@ -100,6 +72,8 @@ export default {
 	width: 100%;
 	background-repeat: no-repeat;
 	position: relative;
+	display: flex;
+	margin: 0 auto;
 }
 .line {
 	width: 500px;
@@ -111,5 +85,9 @@ export default {
 .btn-wrapper {
 	position: relative;
 	top: -150px;
+}
+.form-line {
+	width: 280px;
+	height: 5px;
 }
 </style>
