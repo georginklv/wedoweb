@@ -93,6 +93,7 @@ body {
 	&:focus,
 	&:hover {
 		background-color: #301aff !important;
+		color: #fff !important;
 	}
 }
 .wrapper {

@@ -60,6 +60,7 @@
 <script>
 export default {
 	data: () => ({
+		values: {},
 		dialog: false,
 		items: ["Skiing", "Ice hockey", "Soccer", "Basketball", "Hockey", "Reading", "Writing", "Coding", "Basejump"],
 	}),
@@ -81,6 +82,9 @@ export default {
 .v-btn {
 	font-size: 20px !important;
 	top: 10px !important;
+	&:hover {
+		color: #fff !important ;
+	}
 }
 .btn-wrapper {
 	position: relative;
@@ -89,5 +93,8 @@ export default {
 .form-line {
 	width: 280px;
 	height: 5px;
+}
+.v-card {
+	padding: 10px;
 }
 </style>
