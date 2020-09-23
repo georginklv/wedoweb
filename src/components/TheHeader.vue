@@ -22,31 +22,78 @@
 							</template>
 							<v-card>
 								<v-card-title>
-									<span class="headline mb-4">Web Design & Development Offer</span>
-									<div class="line form-line mb-3"></div>
+									<span class="headline mb-4">Information about your project</span>
+									<div class="line form-line mb-53"></div>
 								</v-card-title>
 								<v-card-text>
 									<v-container class="pa-0">
 										<v-col class="pa-0" cols="12">
-											<v-text-field label="Outlined" placeholder="Placeholder" outlined></v-text-field>
-
-											<v-autocomplete :items="items" label="Interests" multiple></v-autocomplete>
+											<small>*indicates required field</small>
+											<v-text-field
+												class="mt-1"
+												label="What is your company main activity?*"
+												placeholder=""
+												outlined
+											></v-text-field>
 											<v-autocomplete
 												v-model="values"
 												:items="items"
 												outlined
 												chips
-												label="Outlined"
+												label="What kind of services interest you the most?"
 												multiple
 											></v-autocomplete>
+											<v-text-field class="mt-1" label="Other" placeholder="" outlined></v-text-field>
+											<v-text-field
+												class="mt-1"
+												label="Whats your project budget (leva)?*"
+												placeholder="Numbers only"
+												outlined
+											></v-text-field>
+											<v-menu
+												ref="menu"
+												v-model="menu"
+												:close-on-content-click="false"
+												:return-value.sync="date"
+												transition="scale-transition"
+												offset-y
+												min-width="290px"
+											>
+												<template v-slot:activator="{ on, attrs }">
+													<v-text-field
+														v-model="date"
+														label="What's your deadline?*"
+														prepend-icon="mdi-calendar"
+														readonly
+														v-bind="attrs"
+														v-on="on"
+													></v-text-field>
+												</template>
+												<v-date-picker v-model="date" no-title scrollable>
+													<v-spacer></v-spacer>
+													<v-btn text color="primary" @click="menu = false">Cancel</v-btn>
+													<v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+												</v-date-picker>
+											</v-menu>
+											<span class="headline mb-4">Contacts</span>
+											<div class="line form-line mb-5"></div>
+											<v-text-field class="mt-3" label="Name:*" placeholder="First & Last" outlined></v-text-field>
+											<v-text-field class="mt-1" label="Phone*" outlined></v-text-field>
+											<v-text-field class="mt-1" label="Email*" outlined></v-text-field>
+											<v-text-field class="mt-1" label="Website" outlined></v-text-field>
+											<span class="headline mb-4">GDPR</span>
+											<div class="line form-line mb-3"></div>
+											<v-checkbox
+												v-model="checkbox"
+												label="Become acquainted with personal data protection and agree to the data I have provided to be processed for the purpose of the inquiry."
+											></v-checkbox>
 										</v-col>
 									</v-container>
-									<small>*indicates required field</small>
 								</v-card-text>
 								<v-card-actions>
 									<v-spacer></v-spacer>
 									<v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-									<v-btn color="blue darken-1" text @click="dialog = false">Save</v-btn>
+									<v-btn color="blue darken-1" text @click="dialog = false">Submit</v-btn>
 								</v-card-actions>
 							</v-card>
 						</v-dialog>
@@ -60,9 +107,21 @@
 <script>
 export default {
 	data: () => ({
-		values: {},
+		values: [],
+		checkbox: false,
+		date: new Date().toISOString().substr(0, 10),
+		menu: false,
 		dialog: false,
-		items: ["Skiing", "Ice hockey", "Soccer", "Basketball", "Hockey", "Reading", "Writing", "Coding", "Basejump"],
+		items: [
+			'Web Design & Development',
+			'Corporate Identity',
+			'Web Site Re-design',
+			'SEO Optimization',
+			'UX/UI',
+			'Online Shop',
+			'Social Media Marketing',
+			'Other',
+		],
 	}),
 };
 </script>
@@ -82,6 +141,11 @@ export default {
 .v-btn {
 	font-size: 20px !important;
 	top: 10px !important;
+	&:hover {
+		color: #fff !important ;
+	}
+}
+.v-application .blue--text.text--darken-1 {
 	&:hover {
 		color: #fff !important ;
 	}

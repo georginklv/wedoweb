@@ -14,7 +14,7 @@
 				</p>
 				<v-row class="card-wrapper">
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400">
+						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
 							</v-row>
@@ -38,96 +38,122 @@
 						</v-card>
 					</v-col>
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
+						<v-card class="mx-auto " max-width="400" elevation="0">
+							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">Mobile Web Development</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
 
 							<v-card-actions>
-								<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px"
-									>View Pricing</v-btn
-								>
+								<v-btn color="orange" text>
+									Share
+								</v-btn>
+
+								<v-btn color="orange" text>
+									Explore
+								</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined disabled>
-							<v-list-item three-line>
+						<v-card class="mx-auto " max-width="400" elevation="0" disabled>
+							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">Online Shop</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
 
 							<v-card-actions>
-								<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px">Soon</v-btn>
+								<v-btn color="orange" text>
+									Share
+								</v-btn>
+
+								<v-btn color="orange" text>
+									Explore
+								</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover outlined>
-							<v-list-item three-line>
+						<v-card class="mx-auto " max-width="400" elevation="0">
+							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">UX/UI</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">Website Re-design</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
 
 							<v-card-actions>
-								<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px">Button</v-btn>
+								<v-btn color="orange" text>
+									Share
+								</v-btn>
+
+								<v-btn color="orange" text>
+									Explore
+								</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
+						<v-card class="mx-auto " max-width="400" elevation="0">
+							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">SEO</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
 
 							<v-card-actions>
-								<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px">Button</v-btn>
+								<v-btn color="orange" text>
+									Share
+								</v-btn>
+
+								<v-btn color="orange" text>
+									Explore
+								</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400" min-width="400" hover rounded outlined>
-							<v-list-item three-line>
+						<v-card class="mx-auto " max-width="400" elevation="0">
+							<v-row justify="center">
 								<v-list-item-avatar tile size="80" color="blue"></v-list-item-avatar>
-								<v-list-item-content>
-									<v-list-item-title class="headline mb-1">Social Media Marketing</v-list-item-title>
-									<v-list-item-subtitle
-										>Greyhound divisely hello coldly fonwderfully Greyhound divisely hello coldly fonwderfully
-										v</v-list-item-subtitle
-									>
-								</v-list-item-content>
-							</v-list-item>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
 
 							<v-card-actions>
-								<v-btn shaped rounded class="white--text font-weight-black" color="#ff4f40" width="120px"
-									>View Pricing</v-btn
-								>
+								<v-btn color="orange" text>
+									Share
+								</v-btn>
+
+								<v-btn color="orange" text>
+									Explore
+								</v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-col>
@@ -150,6 +176,10 @@ export default {};
 }
 .v-card {
 	cursor: unset;
+	transition: 0.2s linear;
+	&:hover {
+		background-color: #f6f6f6;
+	}
 }
 .v-card__actions {
 	padding: 16px;
