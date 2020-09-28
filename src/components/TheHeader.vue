@@ -121,14 +121,14 @@ export default {
 		menu: false,
 		dialog: false,
 		items: [
-			"Web Design & Development",
-			"Corporate Identity",
-			"Web Site Re-design",
-			"SEO Optimization",
-			"UX/UI",
-			"Online Shop",
-			"Social Media Marketing",
-			"Other",
+			'Web Design & Development',
+			'Corporate Identity',
+			'Web Site Re-design',
+			'SEO Optimization',
+			'UX/UI',
+			'Online Shop',
+			'Social Media Marketing',
+			'Other',
 		],
 	}),
 };
@@ -156,12 +156,15 @@ export default {
 	position: absolute;
 }
 .shape:nth-of-type(1) {
-	width: 1270px;
-	height: 630px;
-	top: -50px;
+	width: 1590px;
+	height: 730px;
+	top: -80px;
+	left: 0px;
 	position: absolute;
 	background: linear-gradient(64deg, #f34868 23%, #f24768 23%, #9e00ec 79%);
-	animation: wave 8s ease-in-out infinite;
+	-webkit-animation: wave-data-v-9a9f6144 8s ease-in-out infinite;
+	animation: wave-data-v-9a9f6144 8s ease-in-out infinite;
+	transform: rotate3d(0, 4, 1, 28deg);
 }
 .shape:nth-of-type(2) {
 	width: 800px;
@@ -222,10 +225,10 @@ export default {
 @keyframes wave {
 	0%,
 	100% {
-		border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+		border-radius: 26% 74% 27% 63% / 47% 71% 39% 63%;
 	}
 	50% {
-		border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+		border-radius: 46% 84% 47% 83% / 67% 81% 59% 83%;
 	}
 }
 .v-btn {
