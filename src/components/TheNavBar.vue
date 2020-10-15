@@ -21,9 +21,9 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-app-bar app color="indigo" dark>
+		<v-app-bar app color="#f5f5f5" dark>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-lg-none"></v-app-bar-nav-icon>
-			<v-toolbar-title>We Do Web</v-toolbar-title>
+			<v-toolbar-title> <router-link to="/"> We Do Web</router-link></v-toolbar-title>
 
 			<v-row align="center" justify="end">
 				<v-col cols="auto" class="pa-0 mx-2 ">
@@ -52,7 +52,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+	text-decoration: none;
+	color: #000 !important;
+	&:hover {
+		color: #301aff !important;
+	}
+}
+.v-app-bar {
+	color: #000;
+}
 .nav-btns {
+	color: #000;
 	// &:after {
 	// 	content: '';
 	// 	height: 10px;
@@ -66,11 +77,15 @@ export default {
 	// }
 	background-color: unset;
 	&:hover {
-		background-color: #ff4f40 !important;
+		background-color: unset !important;
+		color: #301aff !important;
 	}
 }
 .v-btn:before {
 	background-color: unset;
+}
+.v-btn--round .v-btn__content .v-icon {
+	color: #000 !important;
 }
 @media (min-width: 1264px) {
 	.v-application .d-lg-block {

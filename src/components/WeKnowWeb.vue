@@ -249,6 +249,9 @@ export default {};
 .v-card__actions {
 	padding: 20px;
 }
+.v-application--is-ltr .v-list-item__avatar:first-child {
+	margin-right: 0 !important;
+}
 .boxes {
 	justify-content: center;
 	display: flex;
