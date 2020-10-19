@@ -40,8 +40,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -74,8 +74,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -108,8 +108,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -142,8 +142,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -176,8 +176,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -210,8 +210,8 @@
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
 
-							<v-card-actions>
-								<v-btn color="orange" text>
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
 									Explore
 								</v-btn>
 							</v-card-actions>
@@ -256,5 +256,12 @@ export default {};
 	justify-content: center;
 	display: flex;
 	text-align: center;
+}
+.v-btn {
+	background-color: #ff4f40;
+	padding: 0 30px;
+}
+.btn-wrapper {
+	justify-content: center;
 }
 </style>

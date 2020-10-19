@@ -23,20 +23,22 @@
 
 		<v-app-bar app color="#f5f5f5" dark>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-lg-none"></v-app-bar-nav-icon>
-			<v-toolbar-title> <router-link to="/"> We Do Web</router-link></v-toolbar-title>
+			<v-toolbar-title>
+				<router-link to="/"> <img src="../assets/logoHorizontal50x146.svg" alt=""/></router-link
+			></v-toolbar-title>
 
 			<v-row align="center" justify="end">
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">Contact</v-btn>
+					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">what we do</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">Contact</v-btn>
+					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">portfolio</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">Contact</v-btn>
+					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">contact us</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">Contact</v-btn>
+					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">blog</v-btn>
 				</v-col>
 			</v-row>
 		</v-app-bar>
@@ -86,6 +88,9 @@ a {
 }
 .v-btn--round .v-btn__content .v-icon {
 	color: #000 !important;
+}
+img {
+	width: 130px;
 }
 @media (min-width: 1264px) {
 	.v-application .d-lg-block {

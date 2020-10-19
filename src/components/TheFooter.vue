@@ -9,15 +9,6 @@
 					</p>
 				</div>
 			</v-col>
-			<v-col cols="3">
-				<div class="content-wrapper">
-					<h2>Menu</h2>
-					<v-btn text to="/contacts" class="nav-btns mt-2 mb-3" max-width="50px">Contact</v-btn>
-					<v-btn text to="/contacts" class="nav-btns mb-3" max-width="50px">Contact</v-btn>
-					<v-btn text to="/contacts" class="nav-btns mb-3" max-width="50px">Contact</v-btn>
-					<v-btn text to="/contacts" class="nav-btns mb-3" max-width="50px">Contact</v-btn>
-				</div>
-			</v-col>
 
 			<v-col cols="3">
 				<div class="">
@@ -29,7 +20,7 @@
 		</v-row>
 		<v-row justify="center">
 			<span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
-			<p>We know web</p>
+			<img src="../assets/logoHorizontal50x146.svg" alt="" />
 		</v-row>
 	</v-footer>
 </template>
@@ -44,6 +35,9 @@ export default {};
 }
 .footer {
 	flex-direction: column;
+}
+img {
+	width: 80px;
 }
 .content-wrapper {
 	display: flex;
