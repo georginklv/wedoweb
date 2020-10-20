@@ -8,93 +8,20 @@
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400">
-							<v-img
-								class="white--text align-end"
-								height="200px"
-								src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-							>
-								<v-card-title>Top 10 Australian beaches</v-card-title>
-							</v-img>
-
-							<v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions>
-								<v-btn color="orange" text>
-									Share
-								</v-btn>
-
-								<v-btn color="orange" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400">
-							<v-img
-								class="white--text align-end"
-								height="200px"
-								src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-							>
-								<v-card-title>Top 10 Australian beaches</v-card-title>
-							</v-img>
-
-							<v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions>
-								<v-btn color="orange" text>
-									Share
-								</v-btn>
-
-								<v-btn color="orange" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col cols="auto">
-						<v-card class="mx-auto" max-width="400">
-							<v-img
-								class="white--text align-end"
-								height="200px"
-								src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-							>
-								<v-card-title>Top 10 Australian beaches</v-card-title>
-							</v-img>
-
-							<v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions>
-								<v-btn color="orange" text>
-									Share
-								</v-btn>
-
-								<v-btn color="orange" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
+					<vue-video-section
+						:elementId="'header-background-video'"
+						:ref="'header-background-video'"
+						:mp4Source="require('../assets/Animated_iMac_MockupsForFree.mp4')"
+						:mobileBreakpoint="992"
+						:desktopHeight="550"
+						:mobileHeight="450"
+						:playsinline="true"
+						:loop="true"
+						:autoplay="true"
+						:autobuffer="true"
+						:muted="true"
+					>
+					</vue-video-section>
 				</v-row>
 			</v-col>
 		</div>
@@ -102,7 +29,17 @@
 </template>
 
 <script>
-export default {};
+import 'vue-video-section/dist/vue-video-section.css';
+import VueVideoSection from 'vue-video-section';
+export default {
+	components: {
+		VueVideoSection,
+	},
+
+	data: () => ({
+		//
+	}),
+};
 </script>
 
 <style lang="scss" scoped>
@@ -119,5 +56,10 @@ export default {};
 		color: #fff !important;
 		background-color: #301aff !important;
 	}
+}
+.vue-video-section__overlay-content-wrapper__background {
+	background: unset !important;
+	opacity: 1 !important;
+	border: none !important;
 }
 </style>

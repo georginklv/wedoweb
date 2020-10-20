@@ -259,7 +259,7 @@ export default {};
 }
 .v-btn {
 	background-color: #ff4f40;
-	padding: 0 30px;
+	padding: 0 30px !important;
 }
 .btn-wrapper {
 	justify-content: center;

@@ -1,7 +1,7 @@
 <template>
 	<v-footer>
 		<v-row justify="center">
-			<v-col cols="3">
+			<v-col cols="4">
 				<div class="content-wrapper">
 					<h2>We Do Web</h2>
 					<p>

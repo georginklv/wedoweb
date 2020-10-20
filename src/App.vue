@@ -125,4 +125,9 @@ body {
 	padding: 20px 0;
 	max-width: 800px;
 }
+.vue-video-section__overlay-content-wrapper__background {
+	background: unset !important;
+	opacity: 1 !important;
+	border: none !important;
+}
 </style>

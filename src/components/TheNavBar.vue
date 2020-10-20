@@ -61,8 +61,12 @@ a {
 		color: #301aff !important;
 	}
 }
+header {
+	z-index: 1000;
+}
 .v-app-bar {
 	color: #000;
+	z-index: 1000;
 }
 .nav-btns {
 	color: #000;
