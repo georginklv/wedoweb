@@ -23,6 +23,11 @@
 					>
 					</vue-video-section>
 				</v-row>
+				<v-row class="card-wrapper my-10">
+					<v-btn color="orange" class="rounded-pill" text>
+						Explore
+					</v-btn>
+				</v-row>
 			</v-col>
 		</div>
 	</v-app>
@@ -50,6 +55,9 @@ export default {
 	justify-content: space-around;
 }
 .v-btn {
+	background-color: #ff4f40;
+	padding: 10px 50px !important;
+	color: #fff !important;
 	&:active,
 	&:focus,
 	&:hover {
