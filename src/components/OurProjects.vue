@@ -24,8 +24,8 @@
 					</vue-video-section>
 				</v-row>
 				<v-row class="card-wrapper my-10">
-					<v-btn color="orange" class="rounded-pill" text>
-						Explore
+					<v-btn to="/portfolio" color="orange" class="rounded-pill" text>
+						portfolio
 					</v-btn>
 				</v-row>
 			</v-col>

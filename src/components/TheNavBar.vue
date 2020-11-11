@@ -2,7 +2,7 @@
 	<v-app>
 		<v-navigation-drawer v-model="drawer" app temporary>
 			<v-list dense>
-				<v-list-item link>
+				<v-list-item to="/" link>
 					<v-list-item-action>
 						<v-icon>mdi-home</v-icon>
 					</v-list-item-action>
@@ -10,12 +10,12 @@
 						<v-list-item-title>Home</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
-				<v-list-item link>
+				<v-list-item to="/portfolio" link>
 					<v-list-item-action>
 						<v-icon>mdi-email</v-icon>
 					</v-list-item-action>
 					<v-list-item-content>
-						<v-list-item-title>Contact</v-list-item-title>
+						<v-list-item-title>Portflio</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
@@ -32,7 +32,7 @@
 					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">what we do</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">portfolio</v-btn>
+					<v-btn text to="/portfolio" class="nav-btns d-none d-lg-block">portfolio</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
 					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">contact us</v-btn>
@@ -54,6 +54,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+	z-index: 1000;
+}
+.v-navigation {
+	z-index: 1001;
+}
 a {
 	text-decoration: none;
 	color: #000 !important;
@@ -96,6 +102,7 @@ header {
 img {
 	width: 130px;
 }
+
 @media (min-width: 1264px) {
 	.v-application .d-lg-block {
 		display: flex !important;

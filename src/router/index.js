@@ -7,21 +7,17 @@ const routes = [
 	{
 		path: '/',
 		name: 'Home',
-		// component: Home
+		component: require('../views/Home.vue').default,
 	},
-	// {
-	//   path: '/helloworld',
-	//   // name: 'HelloWorld',
-	//   // // route level code-splitting
-	//   // // this generates a separate chunk (about.[hash].js) for this route
-	//   // // which is lazy-loaded when the route is visited.
-	//   // component: function () {
-	//   //   return import(/* webpackChunkName: "helloworld" */ '../components/HelloWorld.vue')
-	//   // }
-	// }
+	{
+		path: '/portfolio',
+		name: 'Portfolio',
+		component: require('../components/Portfolio.vue').default,
+	},
 ];
 
 const router = new VueRouter({
+	mode: 'history',
 	routes,
 });
 

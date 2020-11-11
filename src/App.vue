@@ -2,11 +2,6 @@
 	<v-app id="app">
 		<TheNavBar />
 		<v-main>
-			<TheHeader />
-			<WeKnowWeb />
-			<OurProjects />
-			<TheBlog />
-			<TheQuestions />
 			<transition name="fade">
 				<router-view />
 			</transition>
@@ -16,25 +11,15 @@
 </template>
 
 <script>
-import TheHeader from './components/TheHeader';
 import TheNavBar from './components/TheNavBar';
 import TheFooter from './components/TheFooter';
-import WeKnowWeb from './components/WeKnowWeb';
-import OurProjects from './components/OurProjects';
-import TheBlog from './components/TheBlog';
-import TheQuestions from './components/TheQuestions';
 
 export default {
 	name: 'App',
 
 	components: {
-		TheHeader,
 		TheFooter,
 		TheNavBar,
-		WeKnowWeb,
-		OurProjects,
-		TheBlog,
-		TheQuestions,
 	},
 
 	data: () => ({
@@ -96,7 +81,6 @@ body {
 		color: #fff !important;
 	}
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -125,9 +109,30 @@ body {
 	padding: 20px 0;
 	max-width: 800px;
 }
+
+//portfolio video
 .vue-video-section__overlay-content-wrapper__background {
 	background: unset !important;
 	opacity: 1 !important;
 	border: none !important;
+}
+.vue-video-section-wrapper {
+	z-index: 1 !important;
+}
+
+//fade between pages
+.fade-enter-active,
+.fade-leave-active {
+	transition-property: opacity;
+	transition-duration: 0.25s;
+}
+
+.fade-enter-active {
+	transition-delay: 0.25s;
+}
+
+.fade-enter,
+.fade-leave-active {
+	opacity: 0;
 }
 </style>
