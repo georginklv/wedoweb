@@ -12,7 +12,7 @@ const routes = [
 	{
 		path: '/portfolio',
 		name: 'Portfolio',
-		component: require('../components/Portfolio.vue').default,
+		component: require('../views/Portfolio.vue').default,
 	},
 ];
 
