@@ -11,7 +11,7 @@
 					<vue-video-section
 						:elementId="'header-background-video'"
 						:ref="'header-background-video'"
-						:mp4Source="require('../assets/Animated_iMac_MockupsForFree.mp4')"
+						:mp4Source="require('../assets/Gportfolio.mp4')"
 						:mobileBreakpoint="992"
 						:desktopHeight="550"
 						:mobileHeight="450"
