@@ -10,8 +10,8 @@
 					<div class="shape"></div>
 					<div class="shape"></div>
 				</div> -->
-				<img src="../assets/greenBubble.png" class="headerImg SecondaryImg" alt="header-image" />
-				<img src="../assets/headerPic.png" class="headerImg" alt="header-image" />
+				<!-- <img src="../assets/greenBubble.png" class="headerImg SecondaryImg" alt="header-image" /> -->
+				<img src="../assets/headerText2.png" class="headerImg" alt="header-image" />
 				<v-row class="btn-wrapper">
 					<div class="line"></div>
 					<v-row>
