@@ -35,7 +35,7 @@ export default {
 
 <style scoped lang="scss">
 .background-wrapper {
-	background-image: url('../assets/stillBackground.png');
+	background-image: url('../assets/stillBackground2.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
