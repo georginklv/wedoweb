@@ -1,10 +1,12 @@
 <template>
 	<v-app>
-		<TheHeader />
-		<WeKnowWeb />
-		<OurProjects />
-		<TheBlog />
-		<TheQuestions />
+		<div class="background-wrapper">
+			<TheHeader />
+			<WeKnowWeb />
+			<OurProjects />
+			<TheBlog />
+			<TheQuestions />
+		</div>
 	</v-app>
 </template>
 
@@ -31,4 +33,11 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.background-wrapper {
+	background-image: url('../assets/stillBackground.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>

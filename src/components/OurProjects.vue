@@ -70,4 +70,7 @@ export default {
 	opacity: 1 !important;
 	border: none !important;
 }
+.vue-video-section-wrapper {
+	background: unset !important;
+}
 </style>

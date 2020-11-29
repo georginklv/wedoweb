@@ -114,7 +114,7 @@
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
+						<v-card class="mx-auto rounded" max-width="400" elevation="0">
 							<v-row justify="center">
 								<v-list-item-avatar tile size="90"><img src="../assets/ux.png" alt=""/></v-list-item-avatar>
 							</v-row>
@@ -149,6 +149,9 @@ export default {};
 	flex-wrap: wrap !important;
 	flex: 0 1 auto;
 	justify-content: space-around;
+}
+.theme--light.v-card {
+	background-color: unset;
 }
 .v-card {
 	cursor: unset;
