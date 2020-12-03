@@ -12,10 +12,18 @@
 				</v-list-item>
 				<v-list-item to="/portfolio" link>
 					<v-list-item-action>
-						<v-icon>mdi-email</v-icon>
+						<v-icon>mdi-image-outline</v-icon>
 					</v-list-item-action>
 					<v-list-item-content>
 						<v-list-item-title>Portflio</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+				<v-list-item to="/blog" link>
+					<v-list-item-action>
+						<v-icon>mdi-newspaper-variant</v-icon>
+					</v-list-item-action>
+					<v-list-item-content>
+						<v-list-item-title>Blog</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
@@ -38,7 +46,7 @@
 					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">contact us</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">blog</v-btn>
+					<v-btn text to="/blog" class="nav-btns d-none d-lg-block">blog</v-btn>
 				</v-col>
 			</v-row>
 		</v-app-bar>

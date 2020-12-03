@@ -14,6 +14,11 @@ const routes = [
 		name: 'Portfolio',
 		component: require('../views/Portfolio.vue').default,
 	},
+	{
+		path: '/blog',
+		name: 'Blog',
+		component: require('../views/Blog.vue').default,
+	},
 ];
 
 const router = new VueRouter({

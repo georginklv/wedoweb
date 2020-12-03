@@ -89,6 +89,12 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+.background-wrapper {
+	background-image: url('./assets/stillBackground2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .row {
 	flex-wrap: nowrap;
 }

@@ -3,14 +3,10 @@
 		<div class="wrapper background-wrapper">
 			<v-col class="pa-0">
 				<div class="title">
-					<p class="font-weight-black text-uppercase">Blog</p>
-					<div class="line"></div>
+					<p class="font-weight-black text-uppercase mt-16">Blog</p>
+					<div class="line mb-16"></div>
 				</div>
-				<p class="description">
-					Izpolvame nai-novite tehnologii koito ni pozvolqvat nashite produkti da rabotqt bezuprechno i byrzo. Nashiq
-					kod e chist i lesen za poddryjka,a dizaina ni e moderen i inovativen. Nashiq ekip ima kapacitet da syzdade
-					vashiq brand ot 0.
-				</p>
+
 				<v-row class="card-wrapper">
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
@@ -143,12 +139,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.background-wrapper {
-	background-image: url('../assets/stillBackground2.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 .row {
 	display: flex;
 	flex-wrap: wrap !important;
