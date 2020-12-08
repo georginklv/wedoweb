@@ -9,89 +9,11 @@
 
 				<v-row class="card-wrapper">
 					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"> <img src="../assets/web.png" alt="" /> </v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Web design & Development</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/corporate.png" alt="" /> </v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0" disabled>
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/shop.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Website Re-design</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/seo.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
 
@@ -109,11 +31,101 @@
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto rounded" max-width="400" elevation="0">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/ux.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
+
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
+									Explore
+								</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col class="boxes" cols="auto" md="4" sm="6">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
+							<v-row justify="center">
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
+
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
+									Explore
+								</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col class="boxes" cols="auto" md="4" sm="6">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
+							<v-row justify="center">
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
+
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
+									Explore
+								</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col class="boxes" cols="auto" md="4" sm="6">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
+							<v-row justify="center">
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+
+							<v-card-text class="text--primary">
+								<div>Whitehaven Beach</div>
+
+								<div>Whitsunday Island, Whitsunday Islands</div>
+							</v-card-text>
+
+							<v-card-actions class="btn-wrapper">
+								<v-btn color="white" class="rounded-pill" text>
+									Explore
+								</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-col>
+					<v-col class="boxes" cols="auto" md="4" sm="6">
+						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
+							<v-row justify="center">
+								<v-list-item-avatar size="250" max-height="170"
+									><img src="../assets/blogimg.jpg" alt=""
+								/></v-list-item-avatar>
+							</v-row>
+							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
 
 							<v-card-text class="text--primary">
 								<div>Whitehaven Beach</div>
@@ -149,13 +161,14 @@ export default {};
 	background-color: unset;
 }
 .v-card {
+	margin: 0px !important;
+	border-radius: 10px 10px 0px 0px !important;
 	cursor: unset;
 	transition: 0.2s linear;
 	&:hover {
 		box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2) !important;
 		.v-list-item__avatar {
 			transition: color 0.3s, transform 0.3s ease-out;
-			transform: scale(1.1);
 		}
 	}
 }
@@ -176,5 +189,9 @@ export default {};
 }
 .btn-wrapper {
 	justify-content: center;
+}
+.v-avatar {
+	margin-top: 0px;
+	border-radius: 10px 10px 0px 0px !important;
 }
 </style>
