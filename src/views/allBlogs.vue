@@ -1,4 +1,4 @@
-<template>
+<template v-slot:activator="{ on, attrs }">
 	<v-app>
 		<div class="wrapper background-wrapper">
 			<v-col class="pa-0">
@@ -141,13 +141,41 @@
 						</v-card>
 					</v-col>
 				</v-row>
+				<div v-for="blog in blogs" :key="blog.name">
+					<router-link
+						:to="{
+							name: 'BlogDetails',
+							params: { slug: blog.slug },
+						}"
+					>
+						<h2>{{ blog.name }}</h2>
+					</router-link>
+					<figure>
+						<router-link
+							:to="{
+								name: 'BlogDetails',
+								params: { slug: blog.slug },
+							}"
+						>
+							<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
+						</router-link>
+					</figure>
+				</div>
 			</v-col>
 		</div>
 	</v-app>
 </template>
 
 <script>
-export default {};
+import store from '@/store.js';
+export default {
+	data() {
+		return {
+			blogs: store.blogs,
+		};
+	},
+	methods: {},
+};
 </script>
 
 <style lang="scss" scoped>

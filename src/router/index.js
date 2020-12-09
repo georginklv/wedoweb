@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import store from '@/store';
 
 Vue.use(VueRouter);
 
@@ -17,7 +18,21 @@ const routes = [
 	{
 		path: '/blog',
 		name: 'Blog',
-		component: require('../views/Blog.vue').default,
+		component: require('../views/allBlogs.vue').default,
+	},
+	{
+		path: '/blog/:slug',
+		name: 'BlogDetails',
+		props: true,
+		component: () => import(/* webpackChunkName: "DestinationDetails"*/ '../views/BlogPage.vue'),
+		beforeEnter: (to, from, next) => {
+			const exists = store.blogs.find((blog) => blog.slug === to.params.slug);
+			if (exists) {
+				next();
+			} else {
+				next({ name: 'notFound' });
+			}
+		},
 	},
 ];
 
