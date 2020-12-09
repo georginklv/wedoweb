@@ -8,6 +8,7 @@
 			<div class="blog-details">
 				<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
 				<p>{{ blog.description }}</p>
+				asdadasdasd
 			</div>
 		</section>
 	</div>
