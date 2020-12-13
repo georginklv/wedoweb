@@ -99,7 +99,7 @@ body {
 	flex-wrap: nowrap;
 }
 .line {
-	width: 300px;
+	width: 250px;
 	height: 10px;
 	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
 	border-radius: 30px;

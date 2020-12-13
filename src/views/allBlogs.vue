@@ -1,167 +1,49 @@
 <template v-slot:activator="{ on, attrs }">
 	<v-app>
 		<div class="wrapper background-wrapper">
-			<v-col class="pa-0">
-				<div class="title">
-					<p class="font-weight-black text-uppercase mt-16">Blog</p>
-					<div class="line mb-16"></div>
-				</div>
+			<div class="title">
+				<p class="font-weight-black text-uppercase mt-16">Blog</p>
+				<div class="line mb-16"></div>
+			</div>
 
-				<v-row class="card-wrapper">
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+			<v-flex d-flex>
+				<v-layout wrap justify-space-between>
+					<v-flex class="box-wrapper" md4 sm6 xs12 v-for="blog in blogs" :key="blog.name">
+						<v-card class="mx-auto " elevation="0">
+							<router-link
+								:to="{
+									name: 'BlogDetails',
+									params: { slug: blog.slug },
+								}"
+							>
+								<v-row justify="center">
+									<v-list-item-avatar
+										><img :src="require(`@/assets/${blog.image}`)" :alt="blog.name"
+									/></v-list-item-avatar>
+								</v-row>
+								<v-list-item-title class="headline mb-1 pa-4 title-blog">{{ blog.name }}</v-list-item-title>
+							</router-link>
+							<v-card-text class="text--primary description">
+								<div>{{ blog.shortDescription }}</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
+							<figure>
+								<router-link
+									:to="{
+										name: 'BlogDetails',
+										params: { slug: blog.slug },
+									}"
+								>
+									<v-card-actions class="btn-wrapper">
+										<v-btn color="white" class="rounded-pill" text>
+											Explore
+										</v-btn>
+									</v-card-actions>
+								</router-link>
+							</figure>
 						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" min-width="250" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar size="250" max-height="170"
-									><img src="../assets/blogimg.jpg" alt=""
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-				</v-row>
-				<div v-for="blog in blogs" :key="blog.name">
-					<router-link
-						:to="{
-							name: 'BlogDetails',
-							params: { slug: blog.slug },
-						}"
-					>
-						<h2>{{ blog.name }}</h2>
-					</router-link>
-					<figure>
-						<router-link
-							:to="{
-								name: 'BlogDetails',
-								params: { slug: blog.slug },
-							}"
-						>
-							<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
-						</router-link>
-					</figure>
-				</div>
-			</v-col>
+					</v-flex>
+				</v-layout>
+			</v-flex>
 		</div>
 	</v-app>
 </template>
@@ -179,11 +61,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-	display: flex;
-	flex-wrap: wrap !important;
-	flex: 0 1 auto;
-	justify-content: space-around;
+a {
+	text-decoration: none;
+	color: #545454 !important;
 }
 .theme--light.v-card {
 	background-color: unset;
@@ -206,11 +86,7 @@ export default {
 .v-application--is-ltr .v-list-item__avatar:first-child {
 	margin-right: 0 !important;
 }
-.boxes {
-	justify-content: center;
-	display: flex;
-	text-align: center;
-}
+
 .v-btn {
 	background-color: #ff4f40;
 	padding: 0 30px !important;
@@ -219,7 +95,30 @@ export default {
 	justify-content: center;
 }
 .v-avatar {
+	max-width: 300px !important;
+	width: 100% !important;
+	height: 100% !important ;
 	margin-top: 0px;
 	border-radius: 10px 10px 0px 0px !important;
+}
+.box-wrapper {
+	max-width: 300px;
+	margin-bottom: 40px;
+}
+.title-blog {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2em !important;
+}
+.description {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.2em !important;
+	color: #ccc;
+}
+@media screen and (max-width: 600px) {
+	.layout {
+		justify-content: center !important;
+	}
 }
 </style>
