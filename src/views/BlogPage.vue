@@ -1,15 +1,14 @@
 <template>
 	<div>
 		<GoBack />
-		<section class="destinations">
+
+		<v-layout column align-center justify-center>
+			<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
 			<h1>
 				{{ blog.name }}
 			</h1>
-			<div class="blog-details">
-				<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
-				<p>{{ blog.description }}</p>
-			</div>
-		</section>
+			<p>{{ blog.description }}</p>
+		</v-layout>
 	</div>
 </template>
 <script>
