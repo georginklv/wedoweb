@@ -43,10 +43,10 @@
 					<v-btn text to="/portfolio" class="nav-btns d-none d-lg-block">portfolio</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">contact us</v-btn>
+					<v-btn text to="/blog" class="nav-btns d-none d-lg-block">blog</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/blog" class="nav-btns d-none d-lg-block">blog</v-btn>
+					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">contact us</v-btn>
 				</v-col>
 			</v-row>
 		</v-app-bar>

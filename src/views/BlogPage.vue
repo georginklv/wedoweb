@@ -1,10 +1,10 @@
 <template>
-	<div>
+	<div class="background-wrapper">
 		<GoBack />
 
 		<v-layout column align-center justify-center>
 			<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
-			<h1>
+			<h1 class="title-blog">
 				{{ blog.name }}
 			</h1>
 			<p>{{ blog.description }}</p>
@@ -38,42 +38,20 @@ export default {
 
 <style scoped>
 img {
-	max-width: 600px;
+	max-width: 750px;
 	height: auto;
 	width: 100%;
-	max-height: 400px;
+	border-radius: 30px;
 }
-.experiences {
-	padding: 40px 0;
-}
-.destination-details {
-	display: flex;
-	justify-content: space-between;
-}
+
 p {
-	margin: 0 40px;
+	margin: 50px;
 	font-size: 20px;
 	text-align: left;
 }
-.cards {
-	display: flex;
-	justify-content: space-between;
-}
-.cards img {
-	max-height: 200px;
-}
-.card {
-	padding: 0 20px;
-	position: relative;
-}
-.card__text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-size: 25px;
-	font-weight: bold;
-	text-decoration: none;
+
+.title-blog {
+	font-size: 3em;
+	margin: 20px;
 }
 </style>

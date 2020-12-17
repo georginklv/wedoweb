@@ -1,6 +1,6 @@
 <template>
 	<span class="go-back">
-		<button @click="goBack">go back</button>
+		<v-btn color="teal accent-3" @click="goBack">go back</v-btn>
 	</span>
 </template>
 
@@ -16,6 +16,7 @@ export default {
 
 <style scoped>
 .go-back {
+	padding-top: 10px;
 	display: flex;
 	cursor: pointer;
 }

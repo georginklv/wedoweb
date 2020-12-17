@@ -1,171 +1,65 @@
-<template>
+<template v-slot:activator="{ on, attrs }">
 	<v-app>
 		<div class="wrapper background-wrapper">
-			<v-col class="pa-0">
-				<div class="title">
-					<p class="font-weight-black text-uppercase">Blog</p>
-					<div class="line"></div>
-				</div>
-				<p class="description">
-					Izpolvame nai-novite tehnologii koito ni pozvolqvat nashite produkti da rabotqt bezuprechno i byrzo. Nashiq
-					kod e chist i lesen za poddryjka,a dizaina ni e moderen i inovativen. Nashiq ekip ima kapacitet da syzdade
-					vashiq brand ot 0.
-				</p>
-				<v-row class="card-wrapper">
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
+			<div class="title">
+				<p class="font-weight-black text-uppercase mt-16">Blog</p>
+				<div class="line mb-16"></div>
+			</div>
+
+			<v-flex d-flex>
+				<v-layout wrap justify-space-between>
+					<v-flex class="box-wrapper" md4 sm6 xs12 v-for="blog in blogs" :key="blog.name">
+						<v-card class="mx-auto " elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"> <img src="../assets/web.png" alt="" /> </v-list-item-avatar>
+								<v-list-item-avatar
+									><img :src="require(`@/assets/${blog.image}`)" :alt="blog.name"
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Web design & Development</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+							<v-list-item-title class="headline mb-1 pa-4 title-blog">{{ blog.name }}</v-list-item-title>
+							<v-card-text class="text--primary description">
+								<div>{{ blog.shortDescription }}</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
+							<figure>
+								<v-card-actions class="btn-wrapper">
+									<v-btn color="white" class="rounded-pill" text>
+										Explore
+									</v-btn>
+								</v-card-actions>
+							</figure>
 						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/corporate.png" alt="" /> </v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0" disabled>
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/shop.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Website Re-design</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto " max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/seo.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-					<v-col class="boxes" cols="auto" md="4" sm="6">
-						<v-card class="mx-auto rounded" max-width="400" elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/ux.png" alt=""/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
-
-							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
-							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-col>
-				</v-row>
-			</v-col>
+					</v-flex>
+				</v-layout>
+			</v-flex>
 		</div>
 	</v-app>
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {};
+	},
+	methods: {},
+};
 </script>
 
 <style lang="scss" scoped>
-.background-wrapper {
-	background-image: url('../assets/stillBackground2.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.row {
-	display: flex;
-	flex-wrap: wrap !important;
-	flex: 0 1 auto;
-	justify-content: space-around;
+a {
+	text-decoration: none;
+	color: #545454 !important;
 }
 .theme--light.v-card {
 	background-color: unset;
 }
 .v-card {
+	margin: 0px !important;
+	border-radius: 10px 10px 0px 0px !important;
 	cursor: unset;
 	transition: 0.2s linear;
 	&:hover {
 		box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2) !important;
 		.v-list-item__avatar {
 			transition: color 0.3s, transform 0.3s ease-out;
-			transform: scale(1.1);
 		}
 	}
 }
@@ -175,16 +69,39 @@ export default {};
 .v-application--is-ltr .v-list-item__avatar:first-child {
 	margin-right: 0 !important;
 }
-.boxes {
-	justify-content: center;
-	display: flex;
-	text-align: center;
-}
+
 .v-btn {
 	background-color: #ff4f40;
 	padding: 0 30px !important;
 }
 .btn-wrapper {
 	justify-content: center;
+}
+.v-avatar {
+	max-width: 300px !important;
+	width: 100% !important;
+	height: 100% !important ;
+	margin-top: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+.box-wrapper {
+	max-width: 300px;
+	margin-bottom: 40px;
+}
+.title-blog {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2em !important;
+}
+.description {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.2em !important;
+	color: #ccc;
+}
+@media screen and (max-width: 600px) {
+	.layout {
+		justify-content: center !important;
+	}
 }
 </style>
