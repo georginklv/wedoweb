@@ -12,7 +12,7 @@
 	</div>
 </template>
 <script>
-import store from '@/store';
+import storeBlogs from '@/data/storeBlogs';
 import GoBack from '@/components/GoBack';
 
 export default {
@@ -30,7 +30,7 @@ export default {
 	},
 	computed: {
 		blog() {
-			return store.blogs.find((blog) => blog.slug === this.slug);
+			return storeBlogs.blogs.find((blog) => blog.slug === this.slug);
 		},
 	},
 };
@@ -45,7 +45,7 @@ img {
 }
 
 p {
-	margin: 50px;
+	margin: 0 50px 50px 50px;
 	font-size: 20px;
 	text-align: left;
 }

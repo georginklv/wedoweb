@@ -49,11 +49,11 @@
 </template>
 
 <script>
-import store from '@/store.js';
+import storeBlogs from '@/data/storeBlogs.js';
 export default {
 	data() {
 		return {
-			blogs: store.blogs,
+			blogs: storeBlogs.blogs,
 		};
 	},
 	methods: {},
