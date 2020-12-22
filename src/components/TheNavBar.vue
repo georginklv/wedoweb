@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<v-navigation-drawer v-model="drawer" app temporary>
-			<v-list dense>
+			<v-list>
 				<v-list-item to="/" link>
 					<v-list-item-action>
 						<v-icon>mdi-home</v-icon>
@@ -63,10 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-	z-index: 1000;
-}
-.v-navigation {
-	z-index: 1001;
+	z-index: 1000 !important;
 }
 a {
 	text-decoration: none;
@@ -75,26 +72,11 @@ a {
 		color: #301aff !important;
 	}
 }
-header {
-	z-index: 1000;
-}
 .v-app-bar {
 	color: #000;
-	z-index: 1000;
 }
 .nav-btns {
 	color: #000;
-	// &:after {
-	// 	content: '';
-	// 	height: 10px;
-	// 	width: 10px;
-	// 	background-color: red;
-	// 	top: 14px;
-	// 	left: -5px;
-	// 	bottom: 0;
-	// 	border-radius: 20px;
-	// 	position: absolute;
-	// }
 	background-color: unset;
 	&:hover {
 		background-color: unset !important;
@@ -109,6 +91,9 @@ header {
 }
 img {
 	width: 130px;
+}
+.v-list {
+	margin-top: 50px;
 }
 
 @media (min-width: 1264px) {
