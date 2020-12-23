@@ -132,5 +132,9 @@ a {
 	.layout {
 		justify-content: center !important;
 	}
+
+	.line {
+		width: 250px;
+	}
 }
 </style>

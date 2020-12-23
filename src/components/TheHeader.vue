@@ -192,4 +192,9 @@ export default {
 .v-card {
 	padding: 10px;
 }
+@media screen and (max-width: 850px) {
+	.btn-wrapper {
+		top: 0px;
+	}
+}
 </style>

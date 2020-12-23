@@ -55,4 +55,5 @@ export default {
 	flex: 0 1 auto;
 	justify-content: space-around;
 }
+
 </style>

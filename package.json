@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "emailjs": "^3.4.0",
+    "emailjs-com": "^2.6.4",
     "gsap": "^3.5.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",

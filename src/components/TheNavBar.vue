@@ -26,6 +26,14 @@
 						<v-list-item-title>Blog</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
+				<v-list-item to="/contacts" link>
+					<v-list-item-action>
+						<v-icon>mdi-phone</v-icon>
+					</v-list-item-action>
+					<v-list-item-content>
+						<v-list-item-title>Contact us</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
 

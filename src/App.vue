@@ -141,4 +141,9 @@ body {
 .fade-leave-active {
 	opacity: 0;
 }
+@media screen and (max-width: 600px) {
+	.title p {
+		font-size: 60px;
+	}
+}
 </style>
