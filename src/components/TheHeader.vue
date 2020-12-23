@@ -30,11 +30,7 @@
 								</v-btn>
 							</template>
 							<v-card>
-								<form
-									class="gform"
-									method="POST"
-									action="https://script.google.com/macros/s/AKfycbxrlj1HqBSAePhj8V2DEpapYJd5zP-fN8PaN0GEdslr4I1mE31Z/exec"
-								>
+								<form @submit.prevent="sendEmail">
 									<v-card-title>
 										<span class="headline mb-4">Information about your project</span>
 										<div class="line form-line mb-53"></div>
@@ -129,7 +125,7 @@
 											type="submit"
 											value="Send"
 											text
-											@click="!dialog"
+											@click="dialog = false"
 											:disabled="!checkbox"
 											>Submit</v-btn
 										>

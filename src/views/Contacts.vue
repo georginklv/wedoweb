@@ -6,12 +6,7 @@
 		</div>
 		<v-row>
 			<v-col cols="6">
-				<form
-					@submit.prevent="sendEmail"
-					class="gform mb-12 contact-form"
-					method="POST"
-					action="https://script.google.com/macros/s/AKfycbxrlj1HqBSAePhj8V2DEpapYJd5zP-fN8PaN0GEdslr4I1mE31Z/exec"
-				>
+				<form @submit.prevent="sendEmail">
 					<v-col class="pa-0">
 						<small>*indicates required field</small>
 
