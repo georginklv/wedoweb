@@ -48,6 +48,7 @@
 													label="What is your company main activity?*"
 													placeholder=""
 													outlined
+													name="activity"
 												></v-text-field>
 												<v-autocomplete
 													v-model="values"
@@ -56,13 +57,21 @@
 													chips
 													label="What kind of services interest you the most?"
 													multiple
+													name="interest"
 												></v-autocomplete>
-												<v-text-field class="mt-1" label="Other" placeholder="" outlined></v-text-field>
+												<v-text-field
+													class="mt-1"
+													label="Other"
+													placeholder=""
+													outlined
+													name="other activity"
+												></v-text-field>
 												<v-text-field
 													class="mt-1"
 													label="Whats your project budget (leva)?*"
 													placeholder="Numbers only"
 													outlined
+													name="budget"
 												></v-text-field>
 												<v-menu
 													ref="menu"
@@ -81,6 +90,7 @@
 															readonly
 															v-bind="attrs"
 															v-on="on"
+															name="deadline"
 														></v-text-field>
 													</template>
 													<v-date-picker v-model="date" no-title scrollable>
@@ -91,10 +101,17 @@
 												</v-menu>
 												<span class="headline mb-4">Contacts</span>
 												<div class="line form-line mb-5"></div>
-												<v-text-field class="mt-3" label="Name:*" placeholder="First & Last" outlined></v-text-field>
-												<v-text-field class="mt-1" label="Phone*" outlined></v-text-field>
-												<v-text-field class="mt-1" label="Email*" outlined></v-text-field>
-												<v-text-field class="mt-1" label="Website" outlined></v-text-field>
+												<v-text-field
+													class="mt-3"
+													name="name"
+													label="Name:*"
+													placeholder="First & Last"
+													outlined
+												></v-text-field>
+												<v-text-field class="mt-1" name="phone" label="Phone*" outlined></v-text-field>
+												<v-text-field class="mt-1" name="email" label="Email*" outlined></v-text-field>
+												<v-textarea outlined name="message" label="Message" class="mt-1"></v-textarea>
+												<v-text-field class="mt-1" name="website" label="Website" outlined></v-text-field>
 												<span class="headline mb-4">GDPR</span>
 												<div class="line form-line mb-3"></div>
 												<v-checkbox
@@ -107,7 +124,15 @@
 									<v-card-actions>
 										<v-spacer></v-spacer>
 										<v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-										<v-btn color="blue darken-1" text @click="dialog = false">Submit</v-btn>
+										<v-btn
+											color="blue darken-1 white--text"
+											type="submit"
+											value="Send"
+											text
+											@click="!dialog"
+											:disabled="!checkbox"
+											>Submit</v-btn
+										>
 									</v-card-actions>
 								</form>
 							</v-card>
@@ -120,6 +145,9 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init('user_qW52qoo8J4mejwWU8ndCk');
 export default {
 	data: () => ({
 		values: [],
@@ -138,6 +166,18 @@ export default {
 			'Other',
 		],
 	}),
+	methods: {
+		sendEmail: (e) => {
+			emailjs.sendForm('service_oceveqa', 'template_63mcyxs', e.target).then(
+				(result) => {
+					console.log('SUCCESS!', result.status, result.text);
+				},
+				(error) => {
+					console.log('FAILED...', error);
+				},
+			);
+		},
+	},
 };
 </script>
 
