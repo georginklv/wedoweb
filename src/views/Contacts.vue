@@ -5,7 +5,7 @@
 			<div class="line mb-16"></div>
 		</div>
 		<v-row>
-			<v-col cols="6">
+			<v-col cols="12" class="form-element">
 				<form @submit.prevent="sendEmail">
 					<v-col class="pa-0">
 						<small>*indicates required field</small>
@@ -72,4 +72,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.form-element {
+	max-width: 600px;
+}
+</style>

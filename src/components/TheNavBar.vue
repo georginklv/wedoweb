@@ -103,10 +103,15 @@ img {
 .v-list {
 	margin-top: 50px;
 }
-
+.v-navigation-drawer {
+	z-index: 1000 !important;
+}
 @media (min-width: 1264px) {
 	.v-application .d-lg-block {
 		display: flex !important;
+	}
+	.v-navigation-drawer--temporary {
+		z-index: 1000 !important;
 	}
 }
 </style>

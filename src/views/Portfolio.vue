@@ -107,6 +107,9 @@ a {
 	font-size: 1.6rem;
 	margin-top: 20px;
 }
+.description {
+	padding: 16px;
+}
 .v-card {
 	border-radius: 10px !important;
 	cursor: unset;
