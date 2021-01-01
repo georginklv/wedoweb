@@ -103,7 +103,7 @@ img {
 .v-list {
 	margin-top: 50px;
 }
-.v-navigation-drawer {
+.v-navigation-drawer--temporary {
 	z-index: 1000 !important;
 }
 @media (min-width: 1264px) {
