@@ -57,11 +57,11 @@
 							<v-card-actions>
 								<v-spacer></v-spacer>
 
-								<v-btn icon>
+								<v-btn icon :href="project.github" target="_blank">
 									<v-icon>mdi-github</v-icon>
 								</v-btn>
 
-								<v-btn>go to site </v-btn>
+								<v-btn :href="project.demo" target="_blank">go to site </v-btn>
 							</v-card-actions>
 						</v-card>
 					</v-flex>
@@ -109,6 +109,7 @@ a {
 }
 .description {
 	padding: 16px;
+	line-height: 30px;
 }
 .v-card {
 	border-radius: 10px !important;
