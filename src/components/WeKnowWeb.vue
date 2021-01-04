@@ -8,9 +8,8 @@
 					<div class="line"></div>
 				</div>
 				<p class="description">
-					Izpolvame nai-novite tehnologii koito ni pozvolqvat nashite produkti da rabotqt bezuprechno i byrzo. Nashiq
-					kod e chist i lesen za poddryjka,a dizaina ni e moderen i inovativen. Nashiq ekip ima kapacitet da syzdade
-					vashiq brand ot 0.
+					We using the last technologies which helps us our products to work fast and smooth. Our code is clean and easy
+					to mantain and we could create your brand from zero.
 				</p>
 				<v-row class="card-wrapper">
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -25,12 +24,6 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -45,12 +38,6 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -65,12 +52,6 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -85,12 +66,6 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -105,12 +80,6 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -125,14 +94,9 @@
 
 								<div>Whitsunday Island, Whitsunday Islands</div>
 							</v-card-text>
-
-							<v-card-actions class="btn-wrapper">
-								<v-btn color="white" class="rounded-pill" text>
-									Explore
-								</v-btn>
-							</v-card-actions>
 						</v-card>
 					</v-col>
+					<talk-button />
 				</v-row>
 			</v-col>
 		</div>
@@ -140,7 +104,12 @@
 </template>
 
 <script>
-export default {};
+import TalkButton from './TalkButton.vue';
+export default {
+	components: {
+		TalkButton: TalkButton,
+	},
+};
 </script>
 
 <style lang="scss" scoped>
