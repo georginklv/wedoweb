@@ -57,10 +57,6 @@
 							<v-card-actions>
 								<v-spacer></v-spacer>
 
-								<v-btn icon :href="project.github" target="_blank">
-									<v-icon>mdi-github</v-icon>
-								</v-btn>
-
 								<v-btn :href="project.demo" target="_blank">go to site </v-btn>
 							</v-card-actions>
 						</v-card>
@@ -99,13 +95,15 @@ a {
 	transition: 0.2s linear;
 }
 .v-card__title {
-	font-size: 3.25rem;
+	font-size: 3rem;
 	font-weight: 600;
+	filter: drop-shadow(3px 4px 6px black);
 }
 .v-card__text {
 	width: 100%;
 	font-size: 1.6rem;
 	margin-top: 20px;
+	filter: drop-shadow(3px 4px 6px black);
 }
 .description {
 	padding: 16px;
