@@ -1,5 +1,5 @@
 <template>
-	<v-app id="app">
+	<v-app id="app" class="main-wrapper">
 		<TheNavBar />
 		<v-main>
 			<transition name="fade">
@@ -62,9 +62,8 @@ body {
 		font-family: $body-font-family;
 	}
 }
-.v-parallax__image {
-	transform: none !important;
-	width: 100% !important;
+.main-wrapper {
+	overflow: hidden;
 }
 .v-application--wrap {
 	min-height: unset;

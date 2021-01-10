@@ -124,14 +124,6 @@ export default {
 }
 .v-card {
 	cursor: unset;
-	transition: 0.2s linear;
-	&:hover {
-		box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2) !important;
-		.v-list-item__avatar {
-			transition: color 0.3s, transform 0.3s ease-out;
-			transform: scale(1.1);
-		}
-	}
 }
 .v-card__actions {
 	padding: 20px;

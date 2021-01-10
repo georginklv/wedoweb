@@ -100,6 +100,19 @@ a {
 	height: 100% !important ;
 	margin-top: 0px;
 	border-radius: 10px 10px 0px 0px !important;
+	height: 40px;
+	min-width: 40px;
+	width: 40px;
+	max-height: 200px;
+	overflow: hidden;
+	justify-content: left !important;
+}
+.v-avatar img {
+	display: flex !important;
+	height: 210px !important;
+	width: auto !important;
+	min-height: auto !important;
+	justify-content: left !important;
 }
 .box-wrapper {
 	max-width: 300px;
