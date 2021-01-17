@@ -158,6 +158,7 @@ export default {
 .v-btn {
 	font-size: 20px !important;
 	top: 10px !important;
+	z-index: 100;
 	&:hover {
 		color: #fff !important ;
 	}

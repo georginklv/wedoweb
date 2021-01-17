@@ -87,9 +87,10 @@ body {
 	max-width: 1600px;
 	margin: 0 auto;
 	width: 100%;
+	z-index: 100;
 }
 .background-wrapper {
-	background-image: url('./assets/stillBackground2.png');
+	background-image: url('./assets/stillBackground.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -99,20 +100,25 @@ body {
 }
 .line {
 	width: 250px;
-	height: 10px;
-	background: linear-gradient(to right, #27a6e3 0%, #6200ab 100%);
+	height: 7px;
+	background: linear-gradient(to right, #301aff 0%, #8376fd 44%, #0cb9f2 77%, #76fdb2 100%);
 	border-radius: 30px;
 	margin: 0 40px 0 0;
+	border: 1px solid #cccccc;
+	z-index: 100;
 }
 .title p {
-	font-size: 80px;
-	margin-bottom: 40px;
+	font-size: 60px;
+	margin-bottom: 25px;
+	color: #666666;
+	z-index: 100;
 }
 .description {
 	font-size: 16px;
 	font-weight: normal;
 	padding: 20px 0;
 	max-width: 800px;
+	color: #666666
 }
 
 //portfolio video
@@ -142,7 +148,8 @@ body {
 }
 @media screen and (max-width: 600px) {
 	.title p {
-		font-size: 60px;
+		font-size: 40px;
+		margin-bottom: 10px;
 	}
 }
 </style>
