@@ -47,15 +47,15 @@ export default {
 }
 .img-box {
 	z-index: 100;
-	width: 666px;
-	height: 389px;
+	width: 564px;
+	height: 338px;
 	background: black;
 	transition: ease-in-out 10s;
 	background: url(../assets/georginklvSite.png);
 	background-size: cover;
 	background-position: top;
 	position: absolute;
-	transform: translate(238%, 131px);
+	transform: translate(212%, 105px);
 	cursor: pointer;
 }
 .img-box:hover {
@@ -74,5 +74,11 @@ export default {
 		color: #fff !important;
 		background-color: #301aff !important;
 	}
+}
+
+@media screen and (max-width: 601px) {
+	// .video-scroll {
+	// 	background: url("../assets/mockUpMobile.png");
+	// }
 }
 </style>
