@@ -47,16 +47,16 @@ export default {
 }
 .img-box {
 	z-index: 100;
-    width: 564px;
-    height: 338px;
-    background: black;
-    transition: ease-in-out 10s; 
-    background: url(/vuejs-pwa/img/georginklvSite.0870ff71.png);
-    background-size: cover;
-    background-position: top;
-    position: absolute;
-    transform: translate(212%, 105px);
-    cursor: pointer;
+	width: 564px;
+	height: 338px;
+	background: black;
+	transition: ease-in-out 10s;
+	background: url(../assets/georginklvSite.png);
+	background-size: cover;
+	background-position: top;
+	position: absolute;
+	transform: translate(212%, 105px);
+	cursor: pointer;
 }
 .img-box:hover {
 	background-position: bottom;
