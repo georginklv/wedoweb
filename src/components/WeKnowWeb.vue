@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<div class="wrapper">
+		<div class="wrapper" id="weknowweb">
 			<v-col class="pa-0">
 				<div class="title">
 					<p class="font-weight-medium text-uppercase">we</p>
@@ -20,9 +20,9 @@
 							<v-list-item-title class="headline mb-1 pa-4">Web design & Development</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>
+									As a part of today's business, a website is a must in your marketing strategy.
+								</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -34,9 +34,7 @@
 							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>Your brand is your business card! Be recognizable, build respect and trust!</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -48,9 +46,7 @@
 							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>Nowadays, the interest in an e-commerce is growing, your brand needs a e-store!</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -62,9 +58,7 @@
 							<v-list-item-title class="headline mb-1 pa-4">Website Re-design</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>Your website must be modern and up-to-date.</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -76,9 +70,7 @@
 							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>Attract traffic from the search engines with your unique and quality content!</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -90,13 +82,13 @@
 							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Whitehaven Beach</div>
-
-								<div>Whitsunday Island, Whitsunday Islands</div>
+								<div>The satisfied client is the best ad for your business! Take care of the user experience!</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
-					<talk-button />
+					<v-col class="boxes" cols="12">
+						<talk-button />
+					</v-col>
 				</v-row>
 			</v-col>
 		</div>

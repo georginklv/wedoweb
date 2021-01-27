@@ -7,12 +7,14 @@
 					<p class="font-weight-black text-uppercase">Projects</p>
 					<div class="line"></div>
 				</div>
-				<v-row class="card-wrapper my-10">
-					<div class="video-scroll">
-						<img src="../assets/mockUpWide.png" class="mock-up" />
-						<div class="img-box"></div>
-					</div>
-				</v-row>
+				<v-container>
+					<v-row class="card-wrapper my-10">
+						<div class="video-scroll">
+							<img src="../assets/mockUpWide.png" class="mock-up" />
+							<div class="img-box d-none d-lg-flex d-xl-none"></div>
+						</div>
+					</v-row>
+				</v-container>
 				<v-row class="card-wrapper my-10">
 					<v-btn to="/portfolio" color="orange" class="rounded-pill" text>
 						portfolio
@@ -77,8 +79,8 @@ export default {
 }
 
 @media screen and (max-width: 601px) {
-	// .video-scroll {
-	// 	background: url("../assets/mockUpMobile.png");
-	// }
+	.mock-up {
+		max-width: 1060px;
+	}
 }
 </style>

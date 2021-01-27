@@ -45,9 +45,6 @@
 
 			<v-row align="center" justify="end">
 				<v-col cols="auto" class="pa-0 mx-2 ">
-					<v-btn text to="/contacts" class="nav-btns d-none d-lg-block">what we do</v-btn>
-				</v-col>
-				<v-col cols="auto" class="pa-0 mx-2 ">
 					<v-btn text to="/portfolio" class="nav-btns d-none d-lg-block">portfolio</v-btn>
 				</v-col>
 				<v-col cols="auto" class="pa-0 mx-2 ">
@@ -105,6 +102,9 @@ img {
 }
 .v-navigation-drawer--temporary {
 	z-index: 1000 !important;
+}
+.v-navigation-drawer {
+	z-index: 101;
 }
 @media (min-width: 1264px) {
 	.v-application .d-lg-block {

@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<v-row>
-			<v-dialog v-model="dialog" persistent max-width="600px" class="pa-8">
+			<v-dialog v-model="dialog" persistent max-width="600px" class="pa-8 dialog-box">
 				<template v-slot:activator="{ on, attrs }">
 					<v-btn
 						chaped
@@ -184,7 +184,9 @@ export default {
 	backdrop-filter: blur(9px);
 	background: #ffffffa6;
 }
-
+.dialog-box {
+	z-index: 1000;
+}
 @media screen and (max-width: 1200px) {
 	.btn-wrapper {
 		top: 0px;
