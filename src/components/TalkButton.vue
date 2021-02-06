@@ -1,7 +1,12 @@
 <template>
 	<v-app>
 		<v-row>
-			<v-dialog v-model="dialog" persistent max-width="600px" class="pa-8 dialog-box">
+			<v-dialog
+				v-model="dialog"
+				persistent
+				max-width="600px"
+				class="pa-8 dialog-box"
+			>
 				<template v-slot:activator="{ on, attrs }">
 					<v-btn
 						chaped
@@ -17,10 +22,17 @@
 				</template>
 				<v-card>
 					<form @submit.prevent="sendEmail">
-						<v-card-title>
-							<span class="headline mb-4">Information about your project</span>
-							<div class="line form-line mb-53"></div>
-						</v-card-title>
+						<v-row>
+							<v-card-title>
+								<span class="headline mb-4"
+									>Information about your project</span
+								>
+								<div class="line form-line mb-53"></div>
+							</v-card-title>
+							<v-btn icon @click="dialog = false">
+								<v-icon>mdi-close</v-icon>
+							</v-btn>
+						</v-row>
 						<v-card-text>
 							<v-container class="pa-0">
 								<v-col class="pa-0" cols="12">
@@ -41,7 +53,13 @@
 										multiple
 										name="interest"
 									></v-autocomplete>
-									<v-text-field class="mt-1" label="Other" placeholder="" outlined name="other activity"></v-text-field>
+									<v-text-field
+										class="mt-1"
+										label="Other"
+										placeholder=""
+										outlined
+										name="other activity"
+									></v-text-field>
 									<v-text-field
 										class="mt-1"
 										label="Whats your project budget (leva)?*"
@@ -71,8 +89,12 @@
 										</template>
 										<v-date-picker v-model="date" no-title scrollable>
 											<v-spacer></v-spacer>
-											<v-btn text color="primary" @click="menu = false">Cancel</v-btn>
-											<v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+											<v-btn text color="primary" @click="menu = false"
+												>Cancel</v-btn
+											>
+											<v-btn text color="primary" @click="$refs.menu.save(date)"
+												>OK</v-btn
+											>
 										</v-date-picker>
 									</v-menu>
 									<span class="headline mb-4">Contacts</span>
@@ -84,10 +106,30 @@
 										placeholder="First & Last"
 										outlined
 									></v-text-field>
-									<v-text-field class="mt-1" name="phone" label="Phone*" outlined></v-text-field>
-									<v-text-field class="mt-1" name="email" label="Email*" outlined></v-text-field>
-									<v-textarea outlined name="message" label="Message" class="mt-1"></v-textarea>
-									<v-text-field class="mt-1" name="website" label="Website" outlined></v-text-field>
+									<v-text-field
+										class="mt-1"
+										name="phone"
+										label="Phone*"
+										outlined
+									></v-text-field>
+									<v-text-field
+										class="mt-1"
+										name="email"
+										label="Email*"
+										outlined
+									></v-text-field>
+									<v-textarea
+										outlined
+										name="message"
+										label="Message"
+										class="mt-1"
+									></v-textarea>
+									<v-text-field
+										class="mt-1"
+										name="website"
+										label="Website"
+										outlined
+									></v-text-field>
 									<span class="headline mb-4">GDPR</span>
 									<div class="line form-line mb-3"></div>
 									<v-checkbox
@@ -99,7 +141,9 @@
 						</v-card-text>
 						<v-card-actions>
 							<v-spacer></v-spacer>
-							<v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
+							<v-btn color="blue darken-1" text @click="dialog = false"
+								>Close</v-btn
+							>
 							<v-btn
 								color="blue darken-1 white--text"
 								type="submit"
