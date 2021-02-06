@@ -8,6 +8,9 @@
 				{{ blog.name }}
 			</h1>
 			<p>{{ blog.description }}</p>
+			<p>{{ blog.description2 }}</p>
+			<p>{{ blog.description3 }}</p>
+			<p>{{ blog.description4 }}</p>
 		</v-layout>
 	</div>
 </template>

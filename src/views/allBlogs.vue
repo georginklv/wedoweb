@@ -8,7 +8,14 @@
 
 			<v-flex d-flex>
 				<v-layout wrap justify-space-between>
-					<v-flex class="box-wrapper" md4 sm6 xs12 v-for="blog in blogs" :key="blog.name">
+					<v-flex
+						class="box-wrapper"
+						md4
+						sm6
+						xs12
+						v-for="blog in blogs"
+						:key="blog.name"
+					>
 						<v-card class="mx-auto " elevation="0">
 							<router-link
 								:to="{
@@ -16,13 +23,22 @@
 									params: { slug: blog.slug },
 								}"
 							>
+								<!-- Avatar -->
 								<v-row justify="center">
 									<v-list-item-avatar
-										><img :src="require(`@/assets/${blog.image}`)" :alt="blog.name"
+										><img
+											:src="require(`@/assets/${blog.image}`)"
+											:alt="blog.name"
 									/></v-list-item-avatar>
 								</v-row>
-								<v-list-item-title class="headline mb-1 pa-4 title-blog">{{ blog.name }}</v-list-item-title>
+
+								<!-- Title -->
+								<v-list-item-title class="mb-1 pa-3 title-blog">{{
+									blog.name
+								}}</v-list-item-title>
 							</router-link>
+
+							<!-- Descrition -->
 							<v-card-text class="text--primary description">
 								<div>{{ blog.shortDescription }}</div>
 							</v-card-text>
@@ -33,6 +49,7 @@
 										params: { slug: blog.slug },
 									}"
 								>
+									<!-- Button -->
 									<v-card-actions class="btn-wrapper">
 										<v-btn color="white" class="rounded-pill" text>
 											Explore
@@ -117,11 +134,12 @@ a {
 .box-wrapper {
 	max-width: 300px;
 	margin-bottom: 40px;
+	margin-right: 10px;
 }
 .title-blog {
 	text-align: center;
 	font-weight: 600;
-	font-size: 2em !important;
+	font-size: 1.6em !important;
 }
 .description {
 	text-align: center;
@@ -129,7 +147,7 @@ a {
 	font-size: 1.2em !important;
 	color: #ccc;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 790px) {
 	.layout {
 		justify-content: center !important;
 	}

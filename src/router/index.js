@@ -18,15 +18,20 @@ const routes = [
 	{
 		path: '/blog',
 		name: 'Blog',
-		component: require('../views/allBlogs.vue').default,
+		component: require('../views/AllBlogs.vue').default,
 	},
 	{
 		path: '/blog/:slug',
 		name: 'BlogDetails',
 		props: true,
-		component: () => import(/* webpackChunkName: "DestinationDetails"*/ '../views/BlogPage.vue'),
+		component: () =>
+			import(
+				/* webpackChunkName: "DestinationDetails"*/ '../views/BlogPage.vue'
+			),
 		beforeEnter: (to, from, next) => {
-			const exists = storeBlogs.blogs.find((blog) => blog.slug === to.params.slug);
+			const exists = storeBlogs.blogs.find(
+				(blog) => blog.slug === to.params.slug,
+			);
 			if (exists) {
 				next();
 			} else {
