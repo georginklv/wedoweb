@@ -4,6 +4,7 @@ export default {
 			name: 'Why do you need a website?',
 			slug: 'website',
 			image: 'needweb.png',
+			image2: 'needweb.png',
 			id: 1,
 			shortDescription:
 				'You still do not know are need a website? Here you can check why you it. ',

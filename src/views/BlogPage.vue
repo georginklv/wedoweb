@@ -4,7 +4,7 @@
 
 		<v-layout column align-center justify-center>
 			<v-list-item-avatar
-				><img :src="require(`@/assets/${blog.image}`)" :alt="blog.name"
+				><img :src="require(`@/assets/${blog.image2}`)" :alt="blog.name"
 			/></v-list-item-avatar>
 			<h1 class="title-blog">
 				{{ blog.name }}
