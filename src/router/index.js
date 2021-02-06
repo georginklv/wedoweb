@@ -18,7 +18,7 @@ const routes = [
 	{
 		path: '/blog',
 		name: 'Blog',
-		component: require('../views/AllBlogs.vue').default,
+		component: require('../views/allBlogs.vue').default,
 	},
 	{
 		path: '/blog/:slug',
