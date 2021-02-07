@@ -18,13 +18,17 @@ export default {
 				'Building a brand, overall vision of your business and its presentation on the Internet is a long process related to getting to know the business, the goals of this business, its target groups of customers and how it can best position itself and stand out among all others. who work in the relevant field. In this line of thinking, one of the most misconceptions about the purpose of a website is that once it is for your business, it should reflect your feelings and emotions. Yes it is nice to implement, but the main goal of a brand or a website is to impact the user. To keep his attention on your business, to give him a sense of reliability, security, short - accurate - clear and fast to provide him with the information he needs, to be the only one among the many. In order to achieve all this, the most important thing is to correctly determine who your target group is, what is the message you want to convey to them. In this line of thinking, who would you trust to put the tiles in the bathroom, the latest scream of fashion, the person who will announce the lowest price or the one who has proven himself, but appreciates his work and finishes his work .A successful brand and website can be one of the fastest return on investment.',
 		},
 		{
-			name: 'Panama',
-			slug: 'panama',
-			image: 'panama.jpg',
+			name: 'SEO, what and why? ',
+			slug: 'seo',
+			image: 'hawaii.jpg',
 			id: 2,
-			shortDescription: 'asdasdasd',
+			shortDescription: 'Google bots needs good SEO!',
 			description:
-				'all about panama. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi vestibulum cursus quis eget orci. Aenean faucibus faucibus ex, a imperdiet nibh luctus faucibus. Mauris porttitor, velit ac eleifend mattis, sem justo accumsan odio, ut mattis nulla nulla eu nibh. Cras justo risus, sollicitudin eget nulla a, consequat convallis tortor. Fusce eget neque metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Sed aliquam nunc id lectus sagittis, ac elementum eros egestas. Aliquam sed tempor dui.',
+				'SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility for relevant searches. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business.',
+			description2:
+				'Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query.',
+			description3:
+				'SEO is a fundamental part of digital marketing because people conduct trillions of searches every year, often with commercial intent to find information about products and services. Search is often the primary source of digital traffic for brands and complements other marketing channels. Greater visibility and ranking higher in search results than your competition can have a material impact on your bottom line.',
 		},
 		{
 			name: 'Hawaii',

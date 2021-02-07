@@ -8,24 +8,15 @@
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">
-					<v-carousel
-						cycle
-						height="400"
-						hide-delimiter-background
-						show-arrows-on-hover
-						interval="4000"
-						vertical
-						vertical-delimiters
-					>
-						<v-carousel-item v-for="(slide, i) in slides" :key="i" :src="require(`@/assets/${colors.src}`)">
-							<v-sheet height="100%">
-								<v-row class="fill-height" align="center" justify="center">
-									<div class="display-3">{{ slide }} Slide</div>
-								</v-row>
-							</v-sheet>
-						</v-carousel-item>
-					</v-carousel></v-row
-				>
+					<v-carousel>
+						<v-carousel-item
+							v-for="(item, i) in items"
+							:key="i"
+							:src="item.src"
+							reverse-transition="fade-transition"
+							transition="fade-transition"
+						></v-carousel-item></v-carousel
+				></v-row>
 			</v-col>
 		</div>
 	</v-app>
@@ -33,23 +24,28 @@
 
 <script>
 export default {
-	props: {
-		cycle: {
-			type: String,
-			required: false,
-		},
-	},
 	data() {
 		return {
-			colors: [
-				{ src: 'needweb.png' },
-				{ src: 'needweb.png' },
-				{ src: 'needweb.png' },
-				{ src: 'needweb.png' },
-				{ src: 'needweb.png' },
+			items: [
+				{
+					src: './assets/needweb.png',
+				},
+				{
+					src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+				},
+				{
+					src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+				},
+				{
+					src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+				},
 			],
-			slides: ['First', 'Second', 'Third', 'Fourth', 'Fifth'],
 		};
+	},
+	methods: {
+		asd(blog) {
+			console.log(blog);
+		},
 	},
 };
 </script>
