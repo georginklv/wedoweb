@@ -38,7 +38,14 @@
 
 			<v-flex d-flex>
 				<v-layout wrap justify-space-between>
-					<v-flex class="" md4 sm12 xs12 v-for="project in projects" :key="project.title">
+					<v-flex
+						class=""
+						md4
+						sm12
+						xs12
+						v-for="project in projects"
+						:key="project.title"
+					>
 						<v-card class="ma-3">
 							<v-img
 								:src="require(`@/assets/${project.image}`)"
@@ -72,6 +79,9 @@ import storeBlogs from '@/data/storeBlogs.js';
 import storePortfolio from '@/data/storePortfolio.js';
 
 export default {
+	metaInfo: {
+		title: 'Portoflio',
+	},
 	data() {
 		return {
 			blogs: storeBlogs.blogs,

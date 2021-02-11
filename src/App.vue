@@ -21,7 +21,27 @@ export default {
 		TheFooter,
 		TheNavBar,
 	},
-
+	metaInfo() {
+		return {
+			title:
+				'We do web - Website Design and Development, SEO Optimization, Corporate Identity, Website Re-design.',
+			meta: [
+				{
+					name: 'description',
+					content:
+						'We do web can help to biuld you brand! We will create you corporate identity, design and develop you website and going to make your SEO optimazation!',
+				},
+				{
+					property: 'og:title',
+					content:
+						'We do web - Website Design and Development, SEO Optimization, Corporate Identity, Website Re-design.',
+				},
+				{ property: 'og:site_name', content: 'We do web' },
+				{ property: 'og:type', content: 'website' },
+				{ name: 'robots', content: 'index,follow' },
+			],
+		};
+	},
 	data: () => ({
 		//
 	}),
@@ -101,7 +121,13 @@ body {
 .line {
 	width: 250px;
 	height: 7px;
-	background: linear-gradient(to right, #301aff 0%, #8376fd 44%, #0cb9f2 77%, #76fdb2 100%);
+	background: linear-gradient(
+		to right,
+		#301aff 0%,
+		#8376fd 44%,
+		#0cb9f2 77%,
+		#76fdb2 100%
+	);
 	border-radius: 30px;
 	margin: 0 40px 0 0;
 	border: 1px solid #cccccc;
@@ -118,7 +144,7 @@ body {
 	font-weight: normal;
 	padding: 20px 0;
 	max-width: 800px;
-	color: #666666
+	color: #666666;
 }
 
 //portfolio video

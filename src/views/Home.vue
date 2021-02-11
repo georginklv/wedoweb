@@ -26,7 +26,11 @@ export default {
 		// TheBlog,
 		TheQuestions,
 	},
-
+	metaInfo: {
+		title: 'We do web',
+		// override the parent template and just use the above title only
+		titleTemplate: null,
+	},
 	data: () => ({
 		//
 	}),

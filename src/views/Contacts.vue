@@ -10,10 +10,31 @@
 					<v-col class="pa-0">
 						<small>*indicates required field</small>
 
-						<v-text-field class="mt-3" name="name" label="Name:*" placeholder="First & Last" outlined></v-text-field>
-						<v-text-field class="mt-1" name="phone" label="Phone*" outlined></v-text-field>
-						<v-text-field class="mt-1" name="email" label="Email*" outlined></v-text-field>
-						<v-textarea outlined name="message" label="Message" class="mt-1"></v-textarea>
+						<v-text-field
+							class="mt-3"
+							name="name"
+							label="Name:*"
+							placeholder="First & Last"
+							outlined
+						></v-text-field>
+						<v-text-field
+							class="mt-1"
+							name="phone"
+							label="Phone*"
+							outlined
+						></v-text-field>
+						<v-text-field
+							class="mt-1"
+							name="email"
+							label="Email*"
+							outlined
+						></v-text-field>
+						<v-textarea
+							outlined
+							name="message"
+							label="Message"
+							class="mt-1"
+						></v-textarea>
 
 						<span class="headline mb-4">GDPR</span>
 						<div class="line form-line mb-3"></div>
@@ -23,14 +44,23 @@
 							v-model="checkbox"
 							label="Become acquainted with personal data protection and agree to the data I have provided to be processed for the purpose of the inquiry."
 						></v-checkbox>
-						<v-btn color="blue darken-1 white--text" type="submit" value="Send" :disabled="!checkbox">Submit</v-btn>
+						<v-btn
+							color="blue darken-1 white--text"
+							type="submit"
+							value="Send"
+							:disabled="!checkbox"
+							>Submit</v-btn
+						>
 					</v-col>
 				</form>
 
 				<span class="headline mb-4">To contact us</span>
 				<div class="line form-line mb-3"></div>
 				<p><b>Phone: </b> 0878674825</p>
-				<p><b>Email: </b><a href="mailto:someone@yoursite.com">asdasd@asdasd.bg</a></p>
+				<p>
+					<b>Email: </b
+					><a href="mailto:someone@yoursite.com">asdasd@asdasd.bg</a>
+				</p>
 			</v-col>
 		</v-row>
 	</div>
@@ -40,6 +70,10 @@ import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 init('user_qW52qoo8J4mejwWU8ndCk');
 export default {
+	metaInfo: {
+		// title will be injected into parent titleTemplate
+		title: 'Contacts',
+	},
 	data: () => ({
 		values: [],
 		checkbox: false,

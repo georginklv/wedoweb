@@ -68,6 +68,10 @@
 <script>
 import storeBlogs from '@/data/storeBlogs.js';
 export default {
+	metaInfo: {
+		// title will be injected into parent titleTemplate
+		title: 'Blog page',
+	},
 	data() {
 		return {
 			blogs: storeBlogs.blogs,

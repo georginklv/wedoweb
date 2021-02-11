@@ -23,6 +23,9 @@ export default {
 	components: {
 		GoBack,
 	},
+	metaInfo: {
+		title: 'Blog',
+	},
 	data() {
 		return {};
 	},

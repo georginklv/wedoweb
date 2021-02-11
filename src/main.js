@@ -4,6 +4,10 @@ import router from './router';
 import vuetify from './plugins/vuetify';
 import './registerServiceWorker';
 import VueAnalytics from 'vue-analytics';
+import VueMeta from 'vue-meta';
+
+//Meta
+Vue.use(VueMeta);
 
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {
