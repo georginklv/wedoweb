@@ -8,8 +8,9 @@
 					<div class="line"></div>
 				</div>
 				<p class="description">
-					We using the last technologies which helps us our products to work fast and smooth. Our code is clean and easy
-					to mantain and we could create your brand from zero.
+					And we know how to use it in your advance.<br>
+					By following the latest design and software trends, we can develop your ideas to a fully working and well organised business. <br>
+					The digital universe is limitless. Save your space and start growing.
 				</p>
 				<v-row class="card-wrapper">
 					<v-col class="boxes" cols="auto" md="4" sm="6">
@@ -17,7 +18,7 @@
 							<v-row justify="center">
 								<v-list-item-avatar tile size="90"> <img src="../assets/web.png" alt="" /> </v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Web design & Development</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4">Software Development</v-list-item-title>
 
 							<v-card-text class="text--primary">
 								<div>
@@ -34,7 +35,10 @@
 							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Your brand is your business card! Be recognizable, build respect and trust!</div>
+								<div>YOUR BRAND IS IMPORTANT</div>
+
+								<div>Corporate identity is more than just design. <br>it’s who you are as a company. 
+									It includes corporate design elements visually but also your culture, your values and your internal and external communications. </div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -55,10 +59,12 @@
 							<v-row justify="center">
 								<v-list-item-avatar tile size="90"><img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Website Re-design</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4">Web Design & Redesign</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Your website must be modern and up-to-date.</div>
+								<div>DESIGNING YOUR SPACE</div>
+
+								<div>Bringing life to the visual part of your product</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
