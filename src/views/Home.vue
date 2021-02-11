@@ -4,7 +4,7 @@
 			<TheHeader />
 			<WeKnowWeb />
 			<OurProjects />
-			<TheBlog />
+			<!-- <TheBlog /> -->
 			<TheQuestions />
 		</div>
 	</v-app>
@@ -14,7 +14,7 @@
 import TheHeader from '../components/TheHeader';
 import WeKnowWeb from '../components/WeKnowWeb';
 import OurProjects from '../components/OurProjects';
-import TheBlog from '../components/TheBlog';
+// import TheBlog from '../components/TheBlog';
 import TheQuestions from '../components/TheQuestions';
 export default {
 	name: 'Home',
@@ -23,7 +23,7 @@ export default {
 		TheHeader,
 		WeKnowWeb,
 		OurProjects,
-		TheBlog,
+		// TheBlog,
 		TheQuestions,
 	},
 
