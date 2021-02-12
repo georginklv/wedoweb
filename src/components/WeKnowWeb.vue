@@ -9,7 +9,7 @@
 				</div>
 				<p class="description">
 					And we know how to use it in your advance.<br>
-					By following the latest design and software trends, we can develop your ideas to a fully working and well organised business. <br>
+					By following the latest design and software trends, we can develop an idea to a fully working and well organised business. <br>
 					The digital universe is limitless. Save your space and start growing.
 				</p>
 				<v-row class="card-wrapper">
@@ -22,7 +22,8 @@
 
 							<v-card-text class="text--primary">
 								<div>
-									As a part of today's business, a website is a must in your marketing strategy.
+									We share ideas, we shape them driven by our goal to succeed and they come to life. From dreams to development, 
+									implementation and testing we are here to deliver.
 								</div>
 							</v-card-text>
 						</v-card>
@@ -35,10 +36,8 @@
 							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>YOUR BRAND IS IMPORTANT</div>
-
-								<div>Corporate identity is more than just design. <br>it’s who you are as a company. 
-									It includes corporate design elements visually but also your culture, your values and your internal and external communications. </div>
+								<div>Corporate identity is more than just design. <br>it's who you are as a company. 
+									It includes the visual parts of the brand but also your culture, your values and sets your ton of voice of comunication. </div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -50,7 +49,9 @@
 							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>Nowadays, the interest in an e-commerce is growing, your brand needs a e-store!</div>
+								<div>If you have a physical store and you want to bring it in the digital world, every product can be two clicks away
+									from your customers. Fast and easy.
+								</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
@@ -62,8 +63,6 @@
 							<v-list-item-title class="headline mb-1 pa-4">Web Design & Redesign</v-list-item-title>
 
 							<v-card-text class="text--primary">
-								<div>DESIGNING YOUR SPACE</div>
-
 								<div>Bringing life to the visual part of your product</div>
 							</v-card-text>
 						</v-card>
