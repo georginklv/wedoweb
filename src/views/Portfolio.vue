@@ -1,12 +1,13 @@
 <template v-slot:activator="{ on, attrs }">
 	<v-app>
-		<div class="wrapper background-wrapper">
-			<div class="title">
-				<p class="font-weight-black text-uppercase mt-16">Portfolio</p>
-				<div class="line mb-16"></div>
-			</div>
+		<div class="background-wrapper">
+			<div class="wrapper">
+				<div class="title">
+					<p class="font-weight-black text-uppercase mt-16">Portfolio</p>
+					<div class="line mb-16"></div>
+				</div>
 
-			<!-- <v-flex d-flex>
+				<!-- <v-flex d-flex>
 				<v-layout wrap justify-space-between>
 					<v-flex class="box-wrapper" md12 sm12 xs12 v-for="blog in blogs" :key="blog.name">
 						<v-card class="mx-auto " elevation="0">
@@ -36,40 +37,43 @@
 						</v-card>
 					</v-flex> -->
 
-			<v-flex d-flex>
-				<v-layout wrap justify-space-between>
-					<v-flex
-						class=""
-						md4
-						sm12
-						xs12
-						v-for="project in projects"
-						:key="project.title"
-					>
-						<v-card class="ma-3">
-							<v-img
-								:src="require(`@/assets/${project.image}`)"
-								class="white--text "
-								gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-								height="200px"
-							>
-								<div class="text-wrapper">
-									<v-card-title v-text="project.title"></v-card-title>
-									<v-card-text class="white--text description">
-										<div>{{ project.description }}</div>
-									</v-card-text>
-								</div>
-							</v-img>
+				<v-flex d-flex>
+					<v-layout wrap justify-space-between>
+						<v-flex
+							class=""
+							md4
+							sm12
+							xs12
+							v-for="project in projects"
+							:key="project.title"
+						>
+							<v-card class="ma-3">
+								<v-img
+									:src="require(`@/assets/${project.image}`)"
+									class="white--text "
+									gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+									height="200px"
+								>
+									<div class="text-wrapper">
+										<v-card-title v-text="project.title"></v-card-title>
+										<v-card-text class="white--text description">
+											<div>{{ project.description }}</div>
+										</v-card-text>
+									</div>
+								</v-img>
 
-							<v-card-actions>
-								<v-spacer></v-spacer>
+								<v-card-actions>
+									<v-spacer></v-spacer>
 
-								<v-btn :href="project.demo" target="_blank">go to site </v-btn>
-							</v-card-actions>
-						</v-card>
-					</v-flex>
-				</v-layout>
-			</v-flex>
+									<v-btn :href="project.demo" target="_blank"
+										>go to site
+									</v-btn>
+								</v-card-actions>
+							</v-card>
+						</v-flex>
+					</v-layout>
+				</v-flex>
+			</div>
 		</div>
 	</v-app>
 </template>

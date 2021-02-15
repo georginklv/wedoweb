@@ -5,6 +5,11 @@ import vuetify from './plugins/vuetify';
 import './registerServiceWorker';
 import VueAnalytics from 'vue-analytics';
 import VueMeta from 'vue-meta';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/swiper-bundle.css';
+
+//Carusel
+Vue.use(VueAwesomeSwiper /* { default options with global component } */);
 
 //Meta
 Vue.use(VueMeta);

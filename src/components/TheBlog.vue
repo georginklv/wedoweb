@@ -8,38 +8,35 @@
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">
-					<v-carousel>
-						<v-carousel-item
-							v-for="(item, i) in items"
-							:key="i"
-							:src="item.src"
-							reverse-transition="fade-transition"
-							transition="fade-transition"
-						></v-carousel-item></v-carousel
-				></v-row>
+					<hooper :autoPlay="true" :playSpeed="7000" :itemsToShow="1">
+						<slide :key="blog.id" v-for="blog in blogs">
+							<img :src="require(`@/assets/${blog.image}`)" />
+						</slide>
+					</hooper>
+				</v-row>
+				<v-row class="card-wrapper my-10">
+					<v-btn to="/blog" color="orange" class="rounded-pill" text>
+						blog
+					</v-btn>
+				</v-row>
 			</v-col>
 		</div>
 	</v-app>
 </template>
 
 <script>
+import storeBlogs from '@/data/storeBlogs';
+import { Hooper, Slide } from 'hooper';
+import 'hooper/dist/hooper.css';
+
 export default {
+	components: {
+		Hooper,
+		Slide,
+	},
 	data() {
 		return {
-			items: [
-				{
-					src: './assets/needweb.png',
-				},
-				{
-					src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-				},
-				{
-					src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-				},
-				{
-					src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-				},
-			],
+			blogs: storeBlogs.blogs,
 		};
 	},
 	methods: {
@@ -51,6 +48,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hooper-track {
+	padding-left: 0px !important;
+}
+.hooper {
+	width: 100%;
+	height: 100%;
+
+	li,
+	img {
+		width: 100% !important;
+		height: 100%;
+	}
+}
+.hooper-track {
+	padding-left: 0px !important ;
+}
+.v-btn {
+	background-color: #ff4f40;
+	padding: 10px 50px !important;
+	color: #fff !important;
+	&:active,
+	&:focus,
+	&:hover {
+		color: #fff !important;
+		background-color: #301aff !important;
+	}
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap !important;

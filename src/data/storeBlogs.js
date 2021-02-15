@@ -20,7 +20,7 @@ export default {
 		{
 			name: 'SEO, what and why? ',
 			slug: 'seo',
-			image: 'hawaii.jpg',
+			image: 'needweb.png',
 			id: 2,
 			shortDescription: 'Google bots needs good SEO!',
 			description:
@@ -29,24 +29,6 @@ export default {
 				'Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query.',
 			description3:
 				'SEO is a fundamental part of digital marketing because people conduct trillions of searches every year, often with commercial intent to find information about products and services. Search is often the primary source of digital traffic for brands and complements other marketing channels. Greater visibility and ranking higher in search results than your competition can have a material impact on your bottom line.',
-		},
-		{
-			name: 'Hawaii',
-			slug: 'hawaii',
-			image: 'hawaii.jpg',
-			id: 3,
-			shortDescription: 'asdasdasd',
-			description:
-				'all about hawaii. Etiam iaculis, ex in semper fringilla, lorem augue maximus lorem, in aliquet ex massa non enim. Maecenas pharetra orci eu semper pharetra. Suspendisse vel elit semper, fringilla metus ac, pulvinar justo. Vestibulum nibh lacus, pellentesque non arcu vel, efficitur eleifend lorem. Duis ultrices bibendum orci, nec laoreet elit. In vulputate massa vel massa cursus gravida. Aliquam sed lacus pulvinar, imperdiet risus at, lacinia dolor. Maecenas pellentesque arcu mattis iaculis efficitur. Maecenas quis sem pulvinar, sodales neque eget, efficitur odio.',
-		},
-		{
-			name: 'Jamaica',
-			slug: 'jamaica',
-			image: 'jamaica.jpg',
-			id: 4,
-			shortDescription: 'asdasdasd',
-			description:
-				'all about jamaica. Suspendisse lobortis pharetra tempor. Cras eleifend ante sed arcu interdum, in bibendum enim ultricies. Integer rutrum quis risus at tempor. Maecenas facilisis, nisi vel pellentesque maximus, lectus felis malesuada purus, a pulvinar elit est quis turpis. Duis convallis purus quis finibus consequat. Pellentesque faucibus tincidunt augue non consequat. Donec fringilla at est sit amet blandit. Nunc at porttitor ligula. Fusce sed odio turpis.',
 		},
 	],
 };
