@@ -57,7 +57,6 @@
 								type="submit"
 								value="Send"
 								:disabled="!checkbox"
-								@click="handleSubmit"
 								>Submit</v-btn
 							>
 						</v-col>
