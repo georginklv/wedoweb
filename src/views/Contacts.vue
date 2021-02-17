@@ -60,7 +60,9 @@
 					<p><b>Phone: </b> 0878674825</p>
 					<p>
 						<b>Email: </b
-						><a href="mailto:someone@yoursite.com">asdasd@asdasd.bg</a>
+						><a href="mailto:georginklv@wedoweb.info"
+							>georginklv@wedoweb.info</a
+						>
 					</p>
 				</v-col>
 			</v-row>
