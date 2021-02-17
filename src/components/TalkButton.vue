@@ -222,7 +222,7 @@ export default {
 	height: 5px;
 }
 .v-card {
-	padding: 10px;
+	padding: 15px;
 }
 .v-card.v-sheet {
 	backdrop-filter: blur(9px);
