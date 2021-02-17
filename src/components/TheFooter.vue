@@ -5,7 +5,8 @@
 				<div class="content-wrapper">
 					<h2>We Do Web</h2>
 					<p>
-						We are a creative web design studio which develops boutique websites, awesome brands and graphic design.
+						We are a creative web design studio which develops boutique
+						websites, awesome brands and graphic design.
 					</p>
 				</div>
 			</v-col>
@@ -13,8 +14,24 @@
 			<v-col lg="3" md="4" sm="6" xs="12">
 				<div>
 					<h2>Follow us</h2>
-					<v-icon>mdi-instagram</v-icon>
-					<v-icon>mdi-facebook</v-icon>
+					<v-btn
+						icon
+						large
+						color="purple"
+						target="_blank"
+						href="https://www.instagram.com/wedoweb.website/"
+					>
+						<v-icon>mdi-instagram</v-icon>
+					</v-btn>
+					<v-btn
+						icon
+						large
+						color="blue"
+						target="_blank"
+						href="https://www.facebook.com/Wedoweb.website"
+					>
+						<v-icon>mdi-facebook</v-icon>
+					</v-btn>
 				</div>
 			</v-col>
 		</div>

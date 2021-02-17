@@ -21,6 +21,7 @@ export default {
 			name: 'SEO, what and why? ',
 			slug: 'seo',
 			image: 'needweb.png',
+			image2: 'needweb.png',
 			id: 2,
 			shortDescription: 'Google bots needs good SEO!',
 			description:
@@ -29,6 +30,19 @@ export default {
 				'Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query.',
 			description3:
 				'SEO is a fundamental part of digital marketing because people conduct trillions of searches every year, often with commercial intent to find information about products and services. Search is often the primary source of digital traffic for brands and complements other marketing channels. Greater visibility and ranking higher in search results than your competition can have a material impact on your bottom line.',
+		},
+		{
+			name: 'What is corporate identity? ',
+			slug: 'identity',
+			image: 'needweb.png',
+			image2: 'needweb.png',
+			id: 3,
+			shortDescription: 'How to build a strong corporate identity?',
+			description:
+				'When you hear ‘corporate identity’, you probably think of logos, letterheads and business cards—and that’s definitely part of it. Your corporate design is all those things you’d typically associate with a company’s visual identity, including logos and taglines, colors and fonts, stationery, flyers, web design, social media and all that jazz.However, corporate identity is more than just design; it’s who you are as a company. So it includes those corporate design elements on the one hand but also your culture, your values and your internal and external communications.',
+			description2:
+				'Your corporate identity is more than just design: it’s who you are. It’s everything you stand for, inside and out. That includes… All this vision and purpose, your core values, your culture and behavior—it all needs to be role modeled by you and your team, it needs to be embedded in everything you do and it needs to be brought to life in your corporate design. That’s where your design comes in. Yay! Nothing is more associated with a company than a logo—think the Nike ‘swoosh’, the golden arches of McDonald’s or the red script of Coca-Cola. The website sits at the heart of any modern-day company ecosystem. It’s the hub for all your content and product information, it’s the one place online that you have full control over and it’s where most of your customers will eventually end up, at some point along their shopping journey. After your website, the next most important online platforms are likely to be your social channels. Whether you’re focused on Facebook, Twitter or YouTube, or on the latest trendy network, you’ll want to make sure you’re projecting a consistent corporate image across each channel. Who writes letters anymore? Well, if you do, you’ll want to think about your corporate design! This includes your letterhead and envelopes, ‘with compliments’ slips (you know those little pieces of paper with a quick message of ‘Thanks!’ or adding a personal touch to a gift that you’re sending) and any other company communication as well as your business cards. A lot of us run online businesses but, at some point, you may grow your organization and create a proper office space, or you may have a street team out promoting an event, or you may need to make deliveries. Your corporate identity extends to your physical office or store as well as how your employees and other people representing your company present themselves too.',
+			description3: null,
 		},
 	],
 };
