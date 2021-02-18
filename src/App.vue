@@ -29,7 +29,7 @@ export default {
 				{
 					name: 'description',
 					content:
-						'We do web can help to biuld you brand! We will create you corporate identity, design and develop you website and going to make your SEO optimazation!',
+						'We do web can help you to biuld you brand! We will create you corporate identity, design and develop you website and going to make your SEO optimazation!',
 				},
 				{
 					property: 'og:title',

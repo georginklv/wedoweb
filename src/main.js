@@ -5,9 +5,11 @@ import vuetify from './plugins/vuetify';
 import './registerServiceWorker';
 import VueAnalytics from 'vue-analytics';
 import VueMeta from 'vue-meta';
+import VueHead from 'vue-head';
 
 //Meta
 Vue.use(VueMeta);
+Vue.use(VueHead);
 
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {
