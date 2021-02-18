@@ -4,14 +4,18 @@
 			<v-col class="pa-0">
 				<div class="title">
 					<p class="font-weight-medium text-uppercase">Our</p>
-					<p class="font-weight-black text-uppercase">Projects</p>
+					<p class="font-weight-black text-uppercase">Space</p>
 					<div class="line"></div>
 				</div>
 				<v-container>
 					<v-row class="card-wrapper my-10">
-						<div class="video-scroll">
+						<!-- <div class="video-scroll">
 							<img src="../assets/mockUpWide.png" class="mock-up" />
 							<div class="img-box d-none d-lg-flex d-xl-none"></div>
+						</div> -->
+						<div class="frame">
+						<iframe src='https://my.spline.design/deviceslight-999e034c8fb1b5e133289ad3daee60dc/' 
+						frameborder='0' width='1800px' height='900px'></iframe>
 						</div>
 					</v-row>
 				</v-container>

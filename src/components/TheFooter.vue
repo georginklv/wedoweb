@@ -5,8 +5,8 @@
 				<div class="content-wrapper">
 					<h2>We Do Web</h2>
 					<p>
-						We are a creative web design studio which develops boutique
-						websites, awesome brands and graphic design.
+						We are a creative web design studio with individual approach and eye for the detail. <br>
+						We think, we design, we develop, we seek new ideas and solutions and that is what drives us forward. 
 					</p>
 				</div>
 			</v-col>
