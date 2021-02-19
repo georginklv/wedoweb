@@ -6,6 +6,24 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
 	mode: 'history',
+	scrollBehavior(to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition;
+		} else {
+			const position = {};
+			if (to.hash) {
+				position.selector = to.hash;
+				if (to.hash === '#experience') {
+					position.offset = { y: 140 };
+				}
+				if (document.querySelector(to.hash)) {
+					return position;
+				}
+
+				return false;
+			}
+		}
+	},
 	routes: [
 		{
 			path: '/',
@@ -27,9 +45,7 @@ const router = new VueRouter({
 			name: 'BlogDetails',
 			props: true,
 			component: () =>
-				import(
-					/* webpackChunkName: "DestinationDetails"*/ '../views/BlogPage.vue'
-				),
+				import(/* webpackChunkName: "BlogPage"*/ '../views/BlogPage.vue'),
 			beforeEnter: (to, from, next) => {
 				const exists = storeBlogs.blogs.find(
 					(blog) => blog.slug === to.params.slug,
