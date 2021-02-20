@@ -8,11 +8,16 @@
 					<div class="line"></div>
 				</div>
 				<v-row class="card-wrapper my-10">
-					<hooper :autoPlay="true" :playSpeed="7000" :itemsToShow="1">
-						<slide :key="blog.id" v-for="blog in blogs">
-							<img :src="require(`@/assets/${blog.image}`)" />
-						</slide>
-					</hooper>
+					<v-carousel cycle>
+						<v-carousel-item
+							:key="blog.id"
+							v-for="blog in blogs"
+							reverse-transition="fade-transition"
+							transition="fade-transition"
+						>
+							<img :src="require(`@/assets/${blog.image}`)"
+						/></v-carousel-item>
+					</v-carousel>
 				</v-row>
 				<v-row class="card-wrapper my-10">
 					<v-btn to="/blog" color="orange" class="rounded-pill" text>
@@ -26,13 +31,10 @@
 
 <script>
 import storeBlogs from '@/data/storeBlogs';
-import { Hooper, Slide } from 'hooper';
-import 'hooper/dist/hooper.css';
 
 export default {
 	components: {
-		Hooper,
-		Slide,
+	
 	},
 	data() {
 		return {
@@ -48,22 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hooper-track {
-	padding-left: 0px !important;
-}
-.hooper {
-	width: 100%;
-	height: 100%;
-
-	li,
-	img {
-		width: 100% !important;
-		height: 100%;
-	}
-}
-.hooper-track {
-	padding-left: 0px !important ;
-}
 .v-btn {
 	background-color: #ff4f40;
 	padding: 10px 50px !important;

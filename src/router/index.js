@@ -62,6 +62,16 @@ const router = new VueRouter({
 			name: 'Contacts',
 			component: require('../views/Contacts.vue').default,
 		},
+		{
+			path: '/404',
+			alias: '*',
+			name: 'notFound',
+			component: () =>
+				import(
+					/* webpackChunkName: "NotFound" */
+					'../views/NotFound'
+				),
+		},
 	],
 });
 
