@@ -113,17 +113,17 @@ function parallax(e) {
   background: #9dfdc7; /* Old browsers */
   background: -moz-linear-gradient(
     -45deg,
-    #9dfdc7 9%,
-    #84f2cf 37%,
-    #69e7d9 65%,
-    #31cbeb 100%
+    #afffbc 9%,
+    #58fff0 37%,
+    #2afadf 65%,
+    #00a1ff 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     -45deg,
-    #9dfdc7 9%,
-    #84f2cf 37%,
-    #69e7d9 65%,
-    #31cbeb 100%
+    #afffbc 9%,
+    #58fff0 37%,
+    #2afadf 65%,
+    #00a1ff 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     135deg,
