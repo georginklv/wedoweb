@@ -7,7 +7,7 @@ export default {
 			image2: 'needweb.png',
 			id: 1,
 			shortDescription:
-				'You still do not know are need a website? Here you can check why you it. ',
+				'Still hesitating about owning a website? Check out why you need one.',
 			description:
 				'Nowadays, the website is the face of every business. The way people will perceive you, will create a sense of the company and its values, will help you build their trust in your brand.',
 			description2:

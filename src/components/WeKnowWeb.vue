@@ -37,7 +37,7 @@
 
 							<v-card-text class="text--primary">
 								<div>Corporate identity is more than just design. <br>it's who you are as a company. 
-									It includes the visual parts of the brand but also your culture, your values and sets your ton of voice of comunication. </div>
+									It includes the visual parts of the brand but also your culture, your values and sets your ton of voice of communication. </div>
 							</v-card-text>
 						</v-card>
 					</v-col>
