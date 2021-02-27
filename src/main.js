@@ -6,6 +6,9 @@ import './registerServiceWorker';
 import VueAnalytics from 'vue-analytics';
 import VueMeta from 'vue-meta';
 import VueHead from 'vue-head';
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 //Meta
 Vue.use(VueMeta);
@@ -20,7 +23,10 @@ Vue.use(VueAnalytics, {
 Vue.config.productionTip = false;
 
 new Vue({
+	created() {
+		AOS.init();
+	},
 	router,
 	vuetify,
 	render: (h) => h(App),
-}).$mount('#app');
+}).$mount("#app");

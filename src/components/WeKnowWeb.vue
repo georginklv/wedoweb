@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="wrapper" id="weknowweb">
 			<v-col class="pa-0">
-				<div class="title">
+				<div class="title" data-aos="fade-up" data-aos-duration="1000">
 					<p class="font-weight-medium text-uppercase">we</p>
 					<p class="font-weight-black text-uppercase">know web</p>
 					<div class="line"></div>
@@ -16,7 +16,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"> <img src="../assets/web.png" alt="" /> </v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000"> 
+									<img src="../assets/web.png" alt="" /> </v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">Software Development</v-list-item-title>
 
@@ -31,7 +32,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/corporate.png" alt="" /> </v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
+									<img src="../assets/corporate.png" alt="" /> </v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
 
@@ -44,7 +46,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0" disabled>
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/shop.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
+									<img src="../assets/shop.png" alt=""/></v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
 
@@ -58,7 +61,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
+									<img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">Web Design & Redesign</v-list-item-title>
 
@@ -70,7 +74,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/seo.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
+									<img src="../assets/seo.png" alt=""/></v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
 
@@ -82,7 +87,8 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto rounded" max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90"><img src="../assets/ux.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
+									<img src="../assets/ux.png" alt=""/></v-list-item-avatar>
 							</v-row>
 							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
 

@@ -2,7 +2,7 @@
   <v-app>
     <div class="wrapper">
       <v-col cols="auto" class="pa-0">
-        <div class="header-pic">
+        <div class="header-pic animate__animated animate__fadeIn">
           <img
             src="../assets/headerText2.png"
             class="headerImg"
@@ -10,7 +10,7 @@
           />
           <div class="morph"></div>
         </div>
-        <div class="parallax">
+        <div class="parallax animate__animated animate__fadeInUp animate__delay-10s">
           <img src="../assets/p3.png" data-speed="-5" class="layer" id="up" />
           <img
             src="../assets/p1.png"
@@ -24,12 +24,12 @@
             class="layer"
             id="planet"
           />
-          <img src="../assets/p1.png" data-speed="-2" class="layer" id="" />
+          <img src="../assets/p1.png" data-speed="-2" class="layer"/>
           <img src="../assets/p3.png" data-speed="-10" class="layer" id="up" />
           <img src="../assets/p3.png" data-speed="10" class="layer" id="up" />
         </div>
         <v-row class="btn-wrapper">
-          <div class="line"></div>
+          <div class="line" data-aos="fade-up"></div>
           <talk-button />
         </v-row>
       </v-col>
@@ -229,7 +229,7 @@ function parallax(e) {
 
 @media screen and (max-width: 450px) {
   .headerImg {
-    width: 200%;
+    width: 180%;
     margin: -2vh 0 0 -20vh;
   }
   .morph {
@@ -243,7 +243,7 @@ function parallax(e) {
 }
 @media screen and (max-width: 375px) {
   .headerImg {
-    width: 200%;
+    width: 180%;
     margin: -2vh 0 0 -18vh;
   }
   .morph {
