@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="background-wrapper">
 			<div class="wrapper">
-				<div class="title">
+				<div class="title" data-aos="fade-up" data-aos-duration="1000">
 					<p class="font-weight-black text-uppercase mt-16">Blog</p>
 					<div class="line mb-16"></div>
 				</div>

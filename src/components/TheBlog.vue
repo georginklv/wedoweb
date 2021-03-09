@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="wrapper mt-16">
 			<v-col class="pa-0">
-				<div class="title">
+				<div class="title" data-aos="fade-up" data-aos-duration="1000">
 					<p class="font-weight-medium text-uppercase">Our</p>
 					<p class="font-weight-black text-uppercase">Blog</p>
 					<div class="line"></div>
@@ -20,7 +20,8 @@
 					</v-carousel>
 				</v-row>
 				<v-row class="card-wrapper my-10">
-					<v-btn to="/blog" color="orange" class="rounded-pill" text>
+					<v-btn to="/blog" color="orange" class="rounded-pill" 
+					text data-aos="zoom-in" data-aos-duration="1500">
 						blog
 					</v-btn>
 				</v-row>
