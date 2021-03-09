@@ -7,36 +7,6 @@
 					<div class="line mb-16"></div>
 				</div>
 
-				<!-- <v-flex d-flex>
-				<v-layout wrap justify-space-between>
-					<v-flex class="box-wrapper" md12 sm12 xs12 v-for="blog in blogs" :key="blog.name">
-						<v-card class="mx-auto " elevation="0">
-							<v-row justify="center">
-								<v-list-item-avatar
-									><img :src="require(`@/assets/${blog.image}`)" :alt="blog.name"
-								/></v-list-item-avatar>
-							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4 title-blog">{{ blog.name }}</v-list-item-title>
-							<v-card-text class="text--primary description">
-								<div>{{ blog.shortDescription }}</div>
-							</v-card-text>
-							<figure>
-								<router-link
-									:to="{
-										name: 'BlogDetails',
-										params: { slug: blog.slug },
-									}"
-								>
-									<v-card-actions class="btn-wrapper">
-										<v-btn color="white" class="rounded-pill" text>
-											Explore
-										</v-btn>
-									</v-card-actions>
-								</router-link>
-							</figure>
-						</v-card>
-					</v-flex> -->
-
 				<v-flex d-flex>
 					<v-layout wrap justify-space-between>
 						<v-flex

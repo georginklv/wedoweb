@@ -33,19 +33,13 @@
 import storeBlogs from '@/data/storeBlogs';
 
 export default {
-	components: {
-	
-	},
+	components: {},
 	data() {
 		return {
 			blogs: storeBlogs.blogs,
 		};
 	},
-	methods: {
-		asd(blog) {
-			console.log(blog);
-		},
-	},
+	methods: {},
 };
 </script>
 
@@ -61,11 +55,13 @@ export default {
 		background-color: #301aff !important;
 	}
 }
-
 .row {
 	display: flex;
 	flex-wrap: wrap !important;
 	flex: 0 1 auto;
 	justify-content: space-around;
+}
+img {
+	height: 100%;
 }
 </style>

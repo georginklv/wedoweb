@@ -4,7 +4,6 @@ export default {
 			name: 'Why do you need a website?',
 			slug: 'website',
 			image: 'needweb.png',
-			image2: 'needweb.png',
 			id: 1,
 			shortDescription:
 				'Still hesitating about owning a website? Check out why you need one.',
@@ -21,7 +20,6 @@ export default {
 			name: 'SEO, what and why? ',
 			slug: 'seo',
 			image: 'needweb.png',
-			image2: 'needweb.png',
 			id: 2,
 			shortDescription: 'Google bots needs good SEO!',
 			description:
@@ -35,7 +33,6 @@ export default {
 			name: 'What is corporate identity? ',
 			slug: 'identity',
 			image: 'needweb.png',
-			image2: 'needweb.png',
 			id: 3,
 			shortDescription: 'How to build a strong corporate identity?',
 			description:

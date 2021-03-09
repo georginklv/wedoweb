@@ -14,6 +14,7 @@ Vue.use(VueHead);
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {
 	id: 'G-T4PFZ49677',
+	router,
 });
 
 Vue.config.productionTip = false;

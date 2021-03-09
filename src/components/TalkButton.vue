@@ -24,7 +24,7 @@
 					<form @submit.prevent="sendEmail">
 						<v-row>
 							<v-card-title>
-								<span class="headline mb-4"
+								<span class="headline form-headline mb-4"
 									>Information about your project</span
 								>
 								<div class="line form-line mb-53"></div>
@@ -97,7 +97,7 @@
 											>
 										</v-date-picker>
 									</v-menu>
-									<span class="headline mb-4">Contacts</span>
+									<span class="headline form-headline mb-4">Contacts</span>
 									<div class="line form-line mb-5"></div>
 									<v-text-field
 										class="mt-3"
@@ -130,7 +130,7 @@
 										label="Website"
 										outlined
 									></v-text-field>
-									<span class="headline mb-4">GDPR</span>
+									<span class="headline  form-headline mb-4">GDPR</span>
 									<div class="line form-line mb-3"></div>
 									<v-checkbox
 										v-model="checkbox"
@@ -218,11 +218,16 @@ export default {
 	z-index: 100;
 }
 .form-line {
-	width: 280px;
+	width: 220px;
+	margin: 0;
 	height: 5px;
+}
+.form-headline {
+	font-size: 1.3rem !important;
 }
 .v-card {
 	padding: 15px;
+	overflow: hidden;
 }
 .v-card.v-sheet {
 	backdrop-filter: blur(9px);

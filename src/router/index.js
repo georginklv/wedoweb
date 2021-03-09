@@ -44,8 +44,7 @@ const router = new VueRouter({
 			path: '/blog/:slug',
 			name: 'BlogDetails',
 			props: true,
-			component: () =>
-				import(/* webpackChunkName: "BlogPage"*/ '../views/BlogPage.vue'),
+			component: require('../views/BlogPage.vue').default,
 			beforeEnter: (to, from, next) => {
 				const exists = storeBlogs.blogs.find(
 					(blog) => blog.slug === to.params.slug,
@@ -66,11 +65,7 @@ const router = new VueRouter({
 			path: '/404',
 			alias: '*',
 			name: 'notFound',
-			component: () =>
-				import(
-					/* webpackChunkName: "NotFound" */
-					'../views/NotFound'
-				),
+			component: require('../views/NotFound').default,
 		},
 	],
 });

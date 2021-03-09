@@ -3,7 +3,7 @@
 		<GoBack />
 
 		<v-layout column align-center justify-center>
-			<img :src="require(`@/assets/${blog.image2}`)" :alt="blog.name" />
+			<img :src="require(`@/assets/${blog.image}`)" :alt="blog.name" />
 
 			<h1 class="title-blog">
 				{{ blog.name }}
