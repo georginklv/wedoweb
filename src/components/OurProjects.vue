@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="wrapper mt-16">
 			<v-col class="pa-0">
-				<div class="title" data-aos="fade-up" data-aos-duration="1000">
+				<div class="title" data-aos="fade-up" data-aos-duration="500">
 					<p class="font-weight-medium text-uppercase">Our</p>
 					<p class="font-weight-black text-uppercase">Space</p>
 					<div class="line"></div>
@@ -10,19 +10,29 @@
 				<v-container>
 					<v-row class="card-wrapper my-10">
 						<div class="frame">
-						<iframe src='https://my.spline.design/deviceslight-999e034c8fb1b5e133289ad3daee60dc/' 
-						frameborder='0' width='1300px' height='850px'>
-						</iframe>
-						<div class="imageMobile">
-							<img src="../assets/mockUpWide.png" class="mock-up" />
-							<div class="img-box d-none d-lg-flex d-xl-none"></div>
-						</div>
+							<iframe
+								src="https://my.spline.design/deviceslight-999e034c8fb1b5e133289ad3daee60dc/"
+								frameborder="0"
+								width="1300px"
+								height="850px"
+							>
+							</iframe>
+							<div class="imageMobile">
+								<img src="../assets/mockUpWide.png" class="mock-up" />
+								<div class="img-box d-none d-lg-flex d-xl-none"></div>
+							</div>
 						</div>
 					</v-row>
 				</v-container>
 				<v-row class="card-wrapper my-10">
-					<v-btn to="/portfolio" color="orange" class="rounded-pill" text 
-					data-aos="zoom-in" data-aos-duration="1500">
+					<v-btn
+						to="/portfolio"
+						color="orange"
+						class="rounded-pill"
+						text
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+					>
 						portfolio
 					</v-btn>
 				</v-row>
@@ -66,14 +76,14 @@ export default {
 	}
 }
 @media screen and (max-width: 670px) {
-.frame iframe {
-	display: none;
- }
- .imageMobile {
-	display: contents;
-}
- .mock-up {
-	max-width: 1060px;
+	.frame iframe {
+		display: none;
+	}
+	.imageMobile {
+		display: contents;
+	}
+	.mock-up {
+		max-width: 1060px;
 	}
 }
 </style>

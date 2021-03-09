@@ -2,28 +2,38 @@
 	<v-app>
 		<div class="wrapper" id="weknowweb">
 			<v-col class="pa-0">
-				<div class="title" data-aos="fade-up" data-aos-duration="1000">
+				<div class="title" data-aos="fade-up" data-aos-duration="500">
 					<p class="font-weight-medium text-uppercase">we</p>
 					<p class="font-weight-black text-uppercase">know web</p>
 					<div class="line"></div>
 				</div>
 				<p class="description">
-					And we know how to use it in your advance.<br>
-					By following the latest design and software trends, we can develop an idea to a fully working and well organised business. <br>
+					And we know how to use it in your advance.<br />
+					By following the latest design and software trends, we can develop an
+					idea to a fully working and well organised business. <br />
 					The digital universe is limitless. Save your space and start growing.
 				</p>
 				<v-row class="card-wrapper">
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000"> 
-									<img src="../assets/web.png" alt="" /> </v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/web.png" alt="" />
+								</v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Software Development</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>Software Development</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
 								<div>
-									We share ideas, we shape them driven by our goal to succeed and they come to life. From dreams to development, 
+									We share ideas, we shape them driven by our goal to succeed
+									and they come to life. From dreams to development,
 									implementation and testing we are here to deliver.
 								</div>
 							</v-card-text>
@@ -32,28 +42,50 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
-									<img src="../assets/corporate.png" alt="" /> </v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/corporate.png" alt="" />
+								</v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Corporate Identity</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>Corporate Identity</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
-								<div>Corporate identity is more than just design. <br>it's who you are as a company. 
-									It includes the visual parts of the brand but also your culture, your values and sets your ton of voice of communication. </div>
+								<div>
+									Corporate identity is more than just design. <br />it's who
+									you are as a company. It includes the visual parts of the
+									brand but also your culture, your values and sets your ton of
+									voice of communication.
+								</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0" disabled>
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
-									<img src="../assets/shop.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/shop.png" alt=""
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Online Shop</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>Online Shop</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
-								<div>If you have a physical store and you want to bring it in the digital world, every product can be two clicks away
-									from your customers. Fast and easy.
+								<div>
+									If you have a physical store and you want to bring it in the
+									digital world, every product can be two clicks away from your
+									customers. Fast and easy.
 								</div>
 							</v-card-text>
 						</v-card>
@@ -61,10 +93,18 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
-									<img src="../assets/redesign.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/redesign.png" alt=""
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">Web Design & Redesign</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>Web Design & Redesign</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
 								<div>Bringing life to the visual part of your product</div>
@@ -74,26 +114,48 @@
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto " max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
-									<img src="../assets/seo.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/seo.png" alt=""
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">SEO Optimization</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>SEO Optimization</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
-								<div>Attract traffic from the search engines with your unique and quality content!</div>
+								<div>
+									Attract traffic from the search engines with your unique and
+									quality content!
+								</div>
 							</v-card-text>
 						</v-card>
 					</v-col>
 					<v-col class="boxes" cols="auto" md="4" sm="6">
 						<v-card class="mx-auto rounded" max-width="400" elevation="0">
 							<v-row justify="center">
-								<v-list-item-avatar tile size="90" data-aos="fade-up" data-aos-duration="1000">
-									<img src="../assets/ux.png" alt=""/></v-list-item-avatar>
+								<v-list-item-avatar
+									tile
+									size="90"
+									data-aos="fade-up"
+									data-aos-duration="500"
+								>
+									<img src="../assets/ux.png" alt=""
+								/></v-list-item-avatar>
 							</v-row>
-							<v-list-item-title class="headline mb-1 pa-4">UX/UI</v-list-item-title>
+							<v-list-item-title class="headline mb-1 pa-4"
+								>UX/UI</v-list-item-title
+							>
 
 							<v-card-text class="text--primary">
-								<div>The satisfied client is the best ad for your business! Take care of the user experience!</div>
+								<div>
+									The satisfied client is the best ad for your business! Take
+									care of the user experience!
+								</div>
 							</v-card-text>
 						</v-card>
 					</v-col>

@@ -1,7 +1,7 @@
 <template>
 	<div class="background-wrapper">
 		<div class="wrapper">
-			<div class="title" data-aos="fade-up" data-aos-duration="1000">
+			<div class="title" data-aos="fade-up" data-aos-duration="500">
 				<p class="font-weight-black text-uppercase mt-10">Contact us</p>
 				<div class="line mb-6"></div>
 			</div>
