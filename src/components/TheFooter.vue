@@ -100,7 +100,6 @@ export default {};
 }
 .logoyear {
 	transform: translateX(10px);
-	filter: invert(40%) sepia(30%) saturate(2333%) hue-rotate(210deg) brightness(91%) contrast(150%);
 }
 .digits {
 	display: flex;
