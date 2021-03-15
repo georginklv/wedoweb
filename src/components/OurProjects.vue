@@ -58,14 +58,11 @@ export default {
 	}
 }
 @media screen and (max-width: 670px) {
-	.frame iframe {
-		display: none;
-	}
 	.imageMobile {
 		display: contents;
 	}
 	.mock-up {
-		max-width: 1060px;
+		max-width: 800px;
 	}
 }
 </style>
