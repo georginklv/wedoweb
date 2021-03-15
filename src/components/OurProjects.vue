@@ -10,16 +10,8 @@
 				<v-container>
 					<v-row class="card-wrapper my-10">
 						<div class="frame">
-							<iframe
-								src="https://my.spline.design/deviceslight-999e034c8fb1b5e133289ad3daee60dc/"
-								frameborder="0"
-								width="1300px"
-								height="850px"
-							>
-							</iframe>
-							<div class="imageMobile">
+							<div class="">
 								<img src="../assets/mockUpWide.png" class="mock-up" />
-								<div class="img-box d-none d-lg-flex d-xl-none"></div>
 							</div>
 						</div>
 					</v-row>
@@ -66,9 +58,6 @@ export default {
 		color: #fff !important;
 		background-color: #301aff !important;
 	}
-}
-.imageMobile {
-	display: none;
 }
 @media screen and (max-width: 900px) {
 	#planet {
