@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="wrapper" id="weknowweb">
 			<v-col class="pa-0">
-				<div class="title" data-aos="fade-up" data-aos-duration="500">
+				<div class="title" >
 					<p class="font-weight-medium text-uppercase">we</p>
 					<p class="font-weight-black text-uppercase">know web</p>
 					<div class="line"></div>
@@ -20,8 +20,7 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+								
 								>
 									<img src="../assets/web.png" alt="" />
 								</v-list-item-avatar>
@@ -45,8 +44,7 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+						
 								>
 									<img src="../assets/corporate.png" alt="" />
 								</v-list-item-avatar>
@@ -71,8 +69,7 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+					
 								>
 									<img src="../assets/shop.png" alt=""
 								/></v-list-item-avatar>
@@ -96,8 +93,8 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+								
+			
 								>
 									<img src="../assets/redesign.png" alt=""
 								/></v-list-item-avatar>
@@ -117,8 +114,7 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+				
 								>
 									<img src="../assets/seo.png" alt=""
 								/></v-list-item-avatar>
@@ -141,8 +137,7 @@
 								<v-list-item-avatar
 									tile
 									size="90"
-									data-aos="fade-up"
-									data-aos-duration="500"
+			
 								>
 									<img src="../assets/ux.png" alt=""
 								/></v-list-item-avatar>

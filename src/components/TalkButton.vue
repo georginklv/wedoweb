@@ -16,9 +16,6 @@
 						width="120px"
 						v-bind="attrs"
 						v-on="on"
-						data-aos="zoom-in"
-						data-aos-duration="1500"
-						data-aos-delay="50"
 					>
 						let's talk
 					</v-btn>

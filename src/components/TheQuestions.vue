@@ -2,7 +2,7 @@
 	<v-app>
 		<div class="wrapper mt-16">
 			<v-col class="pa-0">
-				<div class="title" data-aos="fade-up" data-aos-duration="500">
+				<div class="title">
 					<p class="font-weight-black text-uppercase">FAQ</p>
 					<div class="line"></div>
 				</div>
