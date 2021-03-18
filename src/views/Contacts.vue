@@ -1,11 +1,25 @@
 <template>
 	<div class="background-wrapper">
 		<div class="wrapper">
-			<div class="title" >
+			<div class="title">
 				<p class="font-weight-black text-uppercase mt-10">Contact us</p>
 				<div class="line mb-6"></div>
 			</div>
 			<v-row>
+				<v-snackbar :color="snackbar.color" v-model="snackbar.show">
+					{{ snackbar.message }}
+					<template v-slot:action="{ attrs }">
+						<v-btn
+							color="white"
+							text
+							v-bind="attrs"
+							@click="snackbar.show = false"
+						>
+							Close
+						</v-btn>
+					</template>
+				</v-snackbar>
+
 				<v-col cols="12" class="form-element ">
 					<form
 						@submit.prevent="sendEmail"
@@ -86,6 +100,11 @@ export default {
 		title: 'Contacts',
 	},
 	data: () => ({
+		snackbar: {
+			show: false,
+			message: null,
+			color: null,
+		},
 		values: [],
 		checkbox: false,
 		date: new Date().toISOString().substr(0, 10),
@@ -110,16 +129,24 @@ export default {
 		},
 	}),
 	methods: {
-		sendEmail: (e) => {
+		sendEmail(e) {
 			emailjs.sendForm('service_oceveqa', 'template_63mcyxs', e.target).then(
 				(result) => {
 					console.log('SUCCESS!', result.status, result.text);
-					this.$refs.form.reset();
+					this.success();
 				},
 				(error) => {
 					console.log('FAILED...', error);
 				},
 			);
+		},
+		success() {
+			this.$refs.form.reset();
+			this.snackbar = {
+				message: 'You send email!',
+				color: 'success',
+				show: true,
+			};
 		},
 	},
 };
