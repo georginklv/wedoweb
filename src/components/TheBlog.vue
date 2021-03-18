@@ -61,4 +61,9 @@ export default {
 	flex: 0 1 auto;
 	justify-content: space-around;
 }
+@media screen and (max-width: 768px) {
+	.v-carousel {
+		height: 320px !important;
+	}
+}
 </style>
